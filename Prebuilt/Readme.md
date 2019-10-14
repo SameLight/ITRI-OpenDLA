@@ -16,9 +16,6 @@
 
 *  Conventional image classification
 
-*  [Petalinux Tutorial](./doc/Petalinux%20Tutorial/petalinux_tutorial.pdf)
-
-*  [Demo Start!](./doc/Demo%20Start!/Demo%20Start.pdf)
 
 #### DLA SPEC
 *  64-MAC NV_small, 128kB, 150MHZ
@@ -84,4 +81,8 @@
 
   *  Also, you may visit us and directly bring back the image file.
 
+#### Documents
 
+*  [Petalinux Building Tutorial](./doc/Petalinux%20Tutorial/petalinux_tutorial.pdf)
+
+*  [Demo GUI user guide](./doc/Demo%20Start!/Demo%20Start.pdf)
