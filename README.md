@@ -1,7 +1,7 @@
 ## ITRI-OpenDLA 
 OpenDLA implementation for FPGA and SoC, revised based on [NVDLA](http://nvdla.org/index.html)
 
-To have multi-media rich information, please visit our [public info](https://sites.google.com/view/itri-icl-dla/)
+To have rich information, please visit our public [site](https://sites.google.com/view/itri-icl-dla/)
 
 ![](FPGA_System.png)
 
