@@ -16,9 +16,9 @@
 
 *  Conventional image classification
 
-*  [Petalinux Tutorial](http://140.96.128.43:3002/Wen-Sheng/Demo-NV_small_64/src/master/doc/Petalinux%20Tutorial/petalinux_tutorial.pdf)
+*  [Petalinux Tutorial](./doc/Petalinux%20Tutorial/petalinux_tutorial.pdf)
 
-*  [Demo Start!](http://140.96.128.43:3002/Wen-Sheng/Demo-NV_small_64/src/master/doc/Demo%20Start!/Demo%20Start.pdf)
+*  [Demo Start!](./doc/Demo%20Start!/Demo%20Start.pdf)
 
 #### DLA
 ----------
