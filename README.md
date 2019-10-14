@@ -9,7 +9,7 @@ To have more multi-media rich information, please refer to our [public info](htt
 - **FPGA_RTL\_nvsmall64** contains the source RTL codes that are revised for FPGA.
 - **nvsmall64_zcu104** contains the Vivado project for Xilinx MPSOC ZCU104 board.
 - **nvsmall64_zcu102** contains the Vivado project for Xilinx MPSOC ZCU102 board.
-
+- **Prebuilt** contains prebuilt DNN models (Resnet & YOLO) for demo.
 
 ### About ITRI-ICL 
 - **ITRI** (Industrial Technology Research Institute), founded since 1973, is Taiwan’s largest research institutions.
