@@ -1,0 +1,16 @@
+vhdl xil_defaultlib  \
+"../../../bd/design_1/ip/design_1_proc_sys_reset_1_0/sim/design_1_proc_sys_reset_1_0.vhd" \
+"../../../bd/design_1/ip/design_1_proc_sys_reset_2_0/sim/design_1_proc_sys_reset_2_0.vhd" \
+"../../../bd/design_1/ip/design_1_proc_sys_reset_3_0/sim/design_1_proc_sys_reset_3_0.vhd" \
+"../../../bd/design_1/ip/design_1_vcu_ddr4_controller_0_0/bd_0/ip/ip_0/sim/bd_3106_microblaze_I_0.vhd" \
+"../../../bd/design_1/ip/design_1_vcu_ddr4_controller_0_0/bd_0/ip/ip_1/sim/bd_3106_rst_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_vcu_ddr4_controller_0_0/bd_0/ip/ip_2/sim/bd_3106_ilmb_0.vhd" \
+"../../../bd/design_1/ip/design_1_vcu_ddr4_controller_0_0/bd_0/ip/ip_3/sim/bd_3106_dlmb_0.vhd" \
+"../../../bd/design_1/ip/design_1_vcu_ddr4_controller_0_0/bd_0/ip/ip_4/sim/bd_3106_dlmb_cntlr_0.vhd" \
+"../../../bd/design_1/ip/design_1_vcu_ddr4_controller_0_0/bd_0/ip/ip_5/sim/bd_3106_ilmb_cntlr_0.vhd" \
+"../../../bd/design_1/ip/design_1_vcu_ddr4_controller_0_0/bd_0/ip/ip_7/sim/bd_3106_second_dlmb_cntlr_0.vhd" \
+"../../../bd/design_1/ip/design_1_vcu_ddr4_controller_0_0/bd_0/ip/ip_8/sim/bd_3106_second_ilmb_cntlr_0.vhd" \
+"../../../bd/design_1/ip/design_1_vcu_ddr4_controller_0_0/bd_0/ip/ip_10/sim/bd_3106_iomodule_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_axi_apb_bridge_0_0/sim/design_1_axi_apb_bridge_0_0.vhd" \
+
+nosort

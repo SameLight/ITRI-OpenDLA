@@ -1,0 +1,95 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 6.8.11  2018-08-07 bk=1.4403 VDI=40 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port mig_sys -pg 1 -y 2090 -defaultsOSRD
+preplace port c0_ddr4 -pg 1 -y 2100 -defaultsOSRD
+preplace inst vcu_ddr4_controller_0 -pg 1 -lvl 10 -y 2130 -defaultsOSRD
+preplace inst xlslice_0 -pg 1 -lvl 6 -y 1870 -defaultsOSRD
+preplace inst axi_interconnect_5 -pg 1 -lvl 4 -y 2250 -defaultsOSRD
+preplace inst zynq_ultra_ps_e_0 -pg 1 -lvl 5 -y 600 -defaultsOSRD
+preplace inst nv_small_64_v07_0 -pg 1 -lvl 8 -y 930 -defaultsOSRD
+preplace inst xlslice_1 -pg 1 -lvl 1 -y 1700 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 2 -y 2230 -defaultsOSRD
+preplace inst axi_interconnect_6 -pg 1 -lvl 4 -y 1250 -defaultsOSRD
+preplace inst xlslice_2 -pg 1 -lvl 2 -y 1530 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 9 -y 2610 -defaultsOSRD
+preplace inst axi_interconnect_hpm0 -pg 1 -lvl 6 -y 1590 -defaultsOSRD
+preplace inst xlconstant_2 -pg 1 -lvl 7 -y 660 -defaultsOSRD
+preplace inst axi_interconnect_hpm1 -pg 1 -lvl 9 -y 2450 -defaultsOSRD
+preplace inst xlconstant_3 -pg 1 -lvl 7 -y 760 -defaultsOSRD
+preplace inst xlconstant_4 -pg 1 -lvl 7 -y 860 -defaultsOSRD
+preplace inst proc_sys_reset_1 -pg 1 -lvl 5 -y 1930 -defaultsOSRD
+preplace inst vcu_0 -pg 1 -lvl 7 -y 1860 -defaultsOSRD
+preplace inst proc_sys_reset_2 -pg 1 -lvl 3 -y 1980 -defaultsOSRD
+preplace inst v_frmbuf_wr_0 -pg 1 -lvl 3 -y 1500 -defaultsOSRD
+preplace inst proc_sys_reset_3 -pg 1 -lvl 3 -y 2190 -defaultsOSRD
+preplace inst axi_apb_bridge_0 -pg 1 -lvl 7 -y 1040 -defaultsOSRD
+preplace inst v_frmbuf_rd_0 -pg 1 -lvl 2 -y 1740 -defaultsOSRD
+preplace inst axi_interconnect_0 -pg 1 -lvl 4 -y 1750 -defaultsOSRD
+preplace inst interrupts0 -pg 1 -lvl 4 -y 1490 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -y 1840 -defaultsOSRD
+preplace inst axi_interconnect_1 -pg 1 -lvl 9 -y 1930 -defaultsOSRD
+preplace inst axi_interconnect_2 -pg 1 -lvl 4 -y 1000 -defaultsOSRD
+preplace inst axi_interconnect_hp0 -pg 1 -lvl 9 -y 2210 -defaultsOSRD
+preplace inst axi_interconnect_3 -pg 1 -lvl 4 -y 2680 -defaultsOSRD
+preplace netloc axi_interconnect_hpm0_M00_AXI 1 6 1 2850
+preplace netloc axi_interconnect_hpm0_M03_AXI 1 6 1 2840
+preplace netloc c0_sys_0_1 1 0 10 NJ 2090 NJ 2090 NJ 2090 1090J 2080 NJ 2080 NJ 2080 NJ 2080 NJ 2080 NJ 2080 4010J
+preplace netloc axi_interconnect_hpm1_M00_AXI 1 9 1 4020
+preplace netloc xlconstant_1_dout 1 9 1 4040J
+preplace netloc gpio_Dout 1 2 4 670 1880 1040J 1910 1580 1800 2430
+preplace netloc nv_small_64_v07_0_m_dbb 1 4 5 1540 400 NJ 400 NJ 400 NJ 400 3620
+preplace netloc xlconstant_2_dout 1 7 1 3270
+preplace netloc xlslice_1_Dout 1 1 1 250J
+preplace netloc clk_wiz_0_locked 1 1 4 NJ 1880 630 2080 1080J 1970 NJ
+preplace netloc axi_apb_bridge_0_APB_M 1 7 1 3230
+preplace netloc v_frmbuf_rd_0_m_axis_video 1 2 1 640
+preplace netloc axi_interconnect_5_M01_AXI 1 4 1 1510
+preplace netloc axi_interconnect_6_M00_AXI 1 4 1 1480
+preplace netloc axi_interconnect_1_M01_AXI 1 3 7 1140 1580 1520J 1410 NJ 1410 NJ 1410 NJ 1410 N 1410 4010
+preplace netloc zynq_ultra_ps_e_0_pl_clk0 1 0 6 0 1610 NJ 1610 NJ 1610 NJ 1610 NJ 1610 2420
+preplace netloc interrupts0_dout1 1 4 1 1500
+preplace netloc proc_sys_reset_clk50_peripheral_aresetn 1 5 1 2470
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_FPD 1 5 1 2510
+preplace netloc axi_interconnect_hp0_M00_AXI1 1 9 1 4000
+preplace netloc axi_interconnect_hpm0_M02_AXI 1 2 5 670 1860 1090J 1880 1550J 1770 NJ 1770 2820
+preplace netloc axi_interconnect_hpm0_M01_AXI 1 1 6 260 1870 NJ 1870 NJ 1870 1560J 1780 NJ 1780 2830
+preplace netloc proc_sys_reset_3_peripheral_aresetn 1 3 6 1050 2390 NJ 2390 NJ 2390 NJ 2390 N 2390 3630
+preplace netloc vcu_0_vcu_host_interrupt 1 3 5 1150 1920 1570J 1830 2420J 1990 NJ 1990 3230
+preplace netloc vcu_ddr4_controller_0_C0_DDR4 1 10 1 N
+preplace netloc v_frmbuf_wr_0_interrupt 1 3 1 1040
+preplace netloc vcu_0_M_AXI_ENC0 1 3 5 1160 2070 NJ 2070 NJ 2070 NJ 2070 3270
+preplace netloc axi_interconnect_3_M01_AXI 1 4 1 1540
+preplace netloc xlconstant_0_dout 1 2 1 NJ
+preplace netloc proc_sys_reset_2_peripheral_aresetn 1 3 5 1110 1600 NJ 1600 2500 1090 2820 960 3280
+preplace netloc S00_AXI_1 1 3 1 1040
+preplace netloc axi_interconnect_5_M00_AXI 1 4 6 1570J 2060 NJ 2060 NJ 2060 NJ 2060 3640 2090 N
+preplace netloc vcu_0_M_AXI_ENC1 1 3 5 1120 2030 NJ 2030 NJ 2030 NJ 2030 3250
+preplace netloc vcu_0_M_AXI_DEC0 1 7 2 N 1850 N
+preplace netloc nv_small_64_v07_0_dla_intr 1 3 6 1130 2090 NJ 2090 NJ 2090 NJ 2090 NJ 2090 3620
+preplace netloc xlslice_2_Dout 1 2 1 NJ
+preplace netloc v_frmbuf_rd_0_interrupt 1 2 2 630J 1410 1080
+preplace netloc clk_wiz_0_clk_out1 1 1 6 230J 1820 NJ 1820 1100J 1890 1490J 1790 NJ 1790 2840
+preplace netloc clk_50mhz 1 1 6 NJ 1840 NJ 1840 1080J 1900 1530 1760 2490 1810 2830J
+preplace netloc axi_interconnect_0_M00_AXI 1 4 1 1490
+preplace netloc vcu_0_M_AXI_DEC1 1 3 5 1160 2110 NJ 2110 NJ 2110 NJ 2110 3260
+preplace netloc xlconstant_4_dout 1 7 1 3240
+preplace netloc clk_wiz_0_clk_out2 1 1 8 220 1660 660 1590 1060 870 1570 870 2460 1800 2820 2040 N 2040 3670
+preplace netloc S00_AXI_3 1 3 5 1150 2040 NJ 2040 2460J 2020 NJ 2020 3240
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM1_FPD 1 5 4 2420 600 NJ 600 NJ 600 3660J
+preplace netloc v_frmbuf_rd_0_m_axi_mm_video 1 2 7 650J 1620 NJ 1620 NJ 1620 2440J 1980 NJ 1980 N 1980 3650
+preplace netloc axi_interconnect_1_M00_AXI 1 9 1 4020
+preplace netloc axi_interconnect_3_M00_AXI 1 4 6 1580J 2050 NJ 2050 NJ 2050 3280J 2070 N 2070 N
+preplace netloc axi_interconnect_2_M00_AXI 1 4 1 1470
+preplace netloc clk_wiz_0_clk_out4 1 1 7 240J 880 NJ 880 NJ 880 1580 880 2480 970 2850 940 3250
+preplace netloc xlconstant_3_dout 1 7 1 3260
+preplace netloc zynq_ultra_ps_e_0_emio_gpio_o 1 0 6 10 1630 260 1630 NJ 1630 NJ 1630 NJ 1630 2450
+preplace netloc xlslice_0_Dout 1 6 1 2850J
+preplace netloc vcu_ddr4_controller_0_sRst_Out 1 9 2 4050 2270 4370
+preplace netloc vcu_ddr4_controller_0_UsrClk 1 2 9 680 2290 1040 2400 NJ 2400 NJ 2400 NJ 2400 N 2400 3690 2330 4030 2280 4380
+preplace netloc proc_sys_reset_2_interconnect_aresetn 1 3 6 1070 2100 NJ 2100 NJ 2100 NJ 2100 N 2100 3680
+levelinfo -pg 1 -20 120 450 860 1320 2110 2670 3080 3460 3850 4240 4430 -top 0 -bot 2820
+"
+}
+0

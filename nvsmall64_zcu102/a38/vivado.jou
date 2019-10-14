@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Sep 10 10:58:43 2019
+# Process ID: 77720
+# Current directory: E:/a38
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent86444 E:\a38\project_1.xpr
+# Log file: E:/a38/vivado.log
+# Journal file: E:/a38\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/a38/project_1.xpr
+update_compile_order -fileset sources_1
+open_bd_design {E:/a38/project_1.srcs/sources_1/bd/zcu102_base_trd/zcu102_base_trd.bd}
+reset_target all [get_files  E:/a38/project_1.srcs/sources_1/bd/zcu102_base_trd/zcu102_base_trd.bd]
+export_ip_user_files -of_objects  [get_files  E:/a38/project_1.srcs/sources_1/bd/zcu102_base_trd/zcu102_base_trd.bd] -sync -no_script -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+save_bd_design

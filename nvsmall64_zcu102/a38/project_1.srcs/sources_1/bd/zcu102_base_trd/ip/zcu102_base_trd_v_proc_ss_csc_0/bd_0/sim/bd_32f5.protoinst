@@ -1,0 +1,65 @@
+{
+	"version": "1.0",
+	"modules": {
+		"bd_32f5": {
+			"proto_instances": {
+				"/csc/m_axis_video": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "ap_clk"},
+						"ARESETN": { "actual": "ap_rst_n"},
+						"TDATA": { "actual": "m_axis_video_TDATA"},
+						"TDEST": { "actual": "m_axis_video_TDEST"},
+						"TID": { "actual": "m_axis_video_TID"},
+						"TKEEP": { "actual": "m_axis_video_TKEEP"},
+						"TLAST": { "actual": "m_axis_video_TLAST"},
+						"TREADY": { "actual": "m_axis_video_TREADY"},
+						"TSTRB": { "actual": "m_axis_video_TSTRB"},
+						"TUSER": { "actual": "m_axis_video_TUSER"},
+						"TVALID": { "actual": "m_axis_video_TVALID"}
+					}
+				},
+				"/csc/s_axi_CTRL": {
+					"interface": "xilinx.com:interface:aximm:1.0",
+					"ports": {
+						"ACLK": { "actual": "ap_clk"},
+						"ARADDR": { "actual": "s_axi_CTRL_ARADDR"},
+						"ARESETN": { "actual": "ap_rst_n"},
+						"ARREADY": { "actual": "s_axi_CTRL_ARREADY"},
+						"ARVALID": { "actual": "s_axi_CTRL_ARVALID"},
+						"AWADDR": { "actual": "s_axi_CTRL_AWADDR"},
+						"AWREADY": { "actual": "s_axi_CTRL_AWREADY"},
+						"AWVALID": { "actual": "s_axi_CTRL_AWVALID"},
+						"BREADY": { "actual": "s_axi_CTRL_BREADY"},
+						"BRESP": { "actual": "s_axi_CTRL_BRESP"},
+						"BVALID": { "actual": "s_axi_CTRL_BVALID"},
+						"RDATA": { "actual": "s_axi_CTRL_RDATA"},
+						"RREADY": { "actual": "s_axi_CTRL_RREADY"},
+						"RRESP": { "actual": "s_axi_CTRL_RRESP"},
+						"RVALID": { "actual": "s_axi_CTRL_RVALID"},
+						"WDATA": { "actual": "s_axi_CTRL_WDATA"},
+						"WREADY": { "actual": "s_axi_CTRL_WREADY"},
+						"WSTRB": { "actual": "s_axi_CTRL_WSTRB"},
+						"WVALID": { "actual": "s_axi_CTRL_WVALID"}
+					}
+				},
+				"/csc/s_axis_video": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "ap_clk"},
+						"ARESETN": { "actual": "ap_rst_n"},
+						"TDATA": { "actual": "s_axis_video_TDATA"},
+						"TDEST": { "actual": "s_axis_video_TDEST"},
+						"TID": { "actual": "s_axis_video_TID"},
+						"TKEEP": { "actual": "s_axis_video_TKEEP"},
+						"TLAST": { "actual": "s_axis_video_TLAST"},
+						"TREADY": { "actual": "s_axis_video_TREADY"},
+						"TSTRB": { "actual": "s_axis_video_TSTRB"},
+						"TUSER": { "actual": "s_axis_video_TUSER"},
+						"TVALID": { "actual": "s_axis_video_TVALID"}
+					}
+				}
+			}
+		}
+	}
+}

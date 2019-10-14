@@ -1,0 +1,392 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Sep 10 10:58:43 2019
+# Process ID: 77720
+# Current directory: E:/a38
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent86444 E:\a38\project_1.xpr
+# Log file: E:/a38/vivado.log
+# Journal file: E:/a38\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/a38/project_1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/a38/zcu102_base_trd.ipdefs/ip_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/Zynq_Project/ultrascale/RTL_nv_small_07'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2018.3/data/ip'.
+CRITICAL WARNING: [Common 17-1649] The Vivado message database 'E:/a38/project_1.runs/synth_1/vivado.pb' contains 34375 messages. Restoring all messages from this message database will impact Vivado performance, so only WARNING, CRITICAL WARNING, and ERROR messages will be restored. To restore all messages from this file use the tcl command 'set_param messaging.loadPbLimit 34376' and re-open the project.
+open_project: Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 956.715 ; gain = 334.902
+update_compile_order -fileset sources_1
+open_bd_design {E:/a38/project_1.srcs/sources_1/bd/zcu102_base_trd/zcu102_base_trd.bd}
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - const_vcc
+Adding cell -- xilinx.com:ip:util_ds_buf:2.1 - dru_ibufds_gt
+Adding cell -- xilinx.com:ip:util_ds_buf:2.1 - dru_ibufds_gt_odiv2
+Adding cell -- xilinx.com:ip:xlslice:1.0 - frmbuf_wr_rst_gpio
+Adding cell -- xilinx.com:user:hdmi_hb:1.0 - hdmi_hb_rx
+Adding cell -- xilinx.com:ip:xlslice:1.0 - vpss_scaler_rst_gpio
+Adding cell -- xilinx.com:ip:axi_data_fifo:2.1 - axi_data_fifo_0
+Adding cell -- xilinx.com:ip:v_frmbuf_wr:2.1 - v_frmbuf_wr_0
+Adding cell -- xilinx.com:ip:v_hdmi_rx_ss:3.1 - v_hdmi_rx_ss_0
+Adding cell -- xilinx.com:ip:v_proc_ss:2.0 - v_proc_ss_scaler
+Adding cell -- xilinx.com:user:hdmi_hb:1.0 - hdmi_hb_tx
+Adding cell -- xilinx.com:ip:xlslice:1.0 - v_mix_rst_gpio
+Adding cell -- xilinx.com:ip:v_hdmi_tx_ss:3.1 - v_hdmi_tx_ss_0
+Adding cell -- xilinx.com:ip:v_mix:3.0 - v_mix_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - vcc_const
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - interrupts0
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - interrupts1
+Adding cell -- xilinx.com:ip:xlslice:1.0 - demosaic_rst_gpio
+Adding cell -- xilinx.com:ip:xlslice:1.0 - frmbuf_wr_rst_gpio
+Adding cell -- xilinx.com:ip:xlslice:1.0 - gamma_rst_gpio
+Adding cell -- xilinx.com:ip:xlslice:1.0 - sensor_rst_gpio
+Adding cell -- xilinx.com:ip:xlslice:1.0 - vpss_csc_rst_gpio
+Adding cell -- xilinx.com:ip:xlslice:1.0 - vpss_scaler_rst_gpio
+Adding cell -- xilinx.com:ip:axi_data_fifo:2.1 - axi_data_fifo_0
+Adding cell -- xilinx.com:ip:axis_subset_converter:1.1 - axis_subset_converter_0
+Adding cell -- xilinx.com:ip:mipi_csi2_rx_subsystem:4.0 - mipi_csi2_rx_subsystem_0
+Adding cell -- xilinx.com:ip:v_demosaic:1.0 - v_demosaic_0
+Adding cell -- xilinx.com:ip:v_frmbuf_wr:2.1 - v_frmbuf_wr_0
+Adding cell -- xilinx.com:ip:v_gamma_lut:1.0 - v_gamma_lut_0
+Adding cell -- xilinx.com:ip:v_proc_ss:2.0 - v_proc_ss_csc
+Adding cell -- xilinx.com:ip:v_proc_ss:2.0 - v_proc_ss_scaler
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - vcc
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - platform_interrupts
+Adding cell -- xilinx.com:ip:xlslice:1.0 - clk_mux_gpio
+Adding cell -- xilinx.com:user:clock_mux:2.0 - clock_mux_0
+Adding cell -- xilinx.com:ip:xlslice:1.0 - frmbuf_wr_rst_gpio
+Adding cell -- xilinx.com:ip:xlslice:1.0 - tpg_rst_gpio
+Adding cell -- xilinx.com:ip:axi_data_fifo:2.1 - axi_data_fifo_0
+Adding cell -- xilinx.com:ip:v_frmbuf_wr:2.1 - v_frmbuf_wr_0
+Adding cell -- xilinx.com:ip:v_tc:6.1 - v_tc_1
+Adding cell -- xilinx.com:ip:v_tpg:8.0 - v_tpg_1
+Adding cell -- xilinx.com:ip:v_vid_in_axi4s:4.0 - v_vid_in_axi4s_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - zero_48bit
+Adding cell -- xilinx.com:ip:axi_apb_bridge:3.0 - axi_apb_bridge_0
+Adding cell -- xilinx.com:ip:axi_intc:4.1 - axi_intc_0
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_hp0
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - s00_regslice
+Adding cell -- xilinx.com:ip:axi_data_fifo:2.1 - s00_data_fifo
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - s01_regslice
+Adding cell -- xilinx.com:ip:axi_data_fifo:2.1 - s01_data_fifo
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - s02_regslice
+Adding cell -- xilinx.com:ip:axi_data_fifo:2.1 - s02_data_fifo
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - s03_regslice
+Adding cell -- xilinx.com:ip:axi_data_fifo:2.1 - s03_data_fifo
+Adding cell -- xilinx.com:ip:axi_data_fifo:2.1 - m00_data_fifo
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m00_regslice
+Adding cell -- xilinx.com:ip:axi_mmu:2.1 - s00_mmu
+Adding cell -- xilinx.com:ip:axi_mmu:2.1 - s01_mmu
+Adding cell -- xilinx.com:ip:axi_mmu:2.1 - s02_mmu
+Adding cell -- xilinx.com:ip:axi_mmu:2.1 - s03_mmu
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_hp1
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - s00_regslice
+Adding cell -- xilinx.com:ip:axi_data_fifo:2.1 - s00_data_fifo
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - s01_regslice
+Adding cell -- xilinx.com:ip:axi_data_fifo:2.1 - s01_data_fifo
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - s02_regslice
+Adding cell -- xilinx.com:ip:axi_data_fifo:2.1 - s02_data_fifo
+Adding cell -- xilinx.com:ip:axi_data_fifo:2.1 - m00_data_fifo
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m00_regslice
+Adding cell -- xilinx.com:ip:axi_mmu:2.1 - s00_mmu
+Adding cell -- xilinx.com:ip:axi_mmu:2.1 - s01_mmu
+Adding cell -- xilinx.com:ip:axi_mmu:2.1 - s02_mmu
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_hpm0
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_hpm1
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - s00_regslice
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m00_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m01_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m02_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m03_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m04_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m05_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m06_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m07_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m08_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m09_regslice
+Adding cell -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_1
+Adding cell -- xilinx.com:ip:axi_iic:2.0 - hdmi_ctl_iic
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_1
+Adding cell -- xilinx.com:ip:axi_iic:2.0 - sensor_iic
+Adding cell -- xilinx.com:ip:vid_phy_controller:2.2 - vid_phy_controller_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_2
+Adding cell -- xilinx.com:ip:zynq_ultra_ps_e:3.2 - zynq_ultra_ps_e_0
+Adding cell -- xilinx.com:user:nv_small_64_v07:7.0 - nv_small_64_v07_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_1/peripheral_aresetn(rst) and /nv_small_64_v07_0/prstn(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_1/clk_out6(clk) and /nv_small_64_v07_0/pclk(undef)
+Successfully read diagram <zcu102_base_trd> from BD file <E:/a38/project_1.srcs/sources_1/bd/zcu102_base_trd/zcu102_base_trd.bd>
+WARNING: [BD 41-1731] Type mismatch between connected pins: /v_hdmi_rx/m_axis_video_aresetn_out(undef) and /v_vid_in_axi4s/aresetn(rst)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /v_hdmi_tx/s_axis_video_aresetn_out(undef) and /v_axi4s_vid_out/aresetn(rst)
+open_bd_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:25 . Memory (MB): peak = 1420.980 ; gain = 10.320
+reset_target all [get_files  E:/a38/project_1.srcs/sources_1/bd/zcu102_base_trd/zcu102_base_trd.bd]
+reset_target: Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 1420.980 ; gain = 0.000
+export_ip_user_files -of_objects  [get_files  E:/a38/project_1.srcs/sources_1/bd/zcu102_base_trd/zcu102_base_trd.bd] -sync -no_script -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [BD 41-1662] The design 'zcu102_base_trd.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <E:/a38/project_1.srcs/sources_1/bd/zcu102_base_trd/ui/bd_e3524bf0.ui> 
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/hdmi_input/axi_data_fifo_0/s_axi_arlock'(1) to net 'v_frmbuf_wr_0_m_axi_mm_video_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/hdmi_input/axi_data_fifo_0/s_axi_awlock'(1) to net 'v_frmbuf_wr_0_m_axi_mm_video_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/mipi_csi2_rx/v_demosaic_0/s_axis_video_TDEST'(1) to net 'axis_subset_converter_0_M_AXIS_TDEST'(10) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/mipi_csi2_rx/axi_data_fifo_0/s_axi_arlock'(1) to net 'v_frmbuf_wr_0_m_axi_mm_video_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/mipi_csi2_rx/axi_data_fifo_0/s_axi_awlock'(1) to net 'v_frmbuf_wr_0_m_axi_mm_video_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/tpg_input/axi_data_fifo_0/s_axi_arlock'(1) to net 'v_frmbuf_wr_0_m_axi_mm_video_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/tpg_input/axi_data_fifo_0/s_axi_awlock'(1) to net 'v_frmbuf_wr_0_m_axi_mm_video_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_hp0/s00_couplers/s00_data_fifo/m_axi_bid'(1) to net 's00_data_fifo_to_s00_couplers_BID'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_hp0/s00_couplers/s00_data_fifo/m_axi_rid'(1) to net 's00_data_fifo_to_s00_couplers_RID'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_hp0/s01_couplers/s01_data_fifo/m_axi_bid'(1) to net 's01_data_fifo_to_s01_couplers_BID'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_hp0/s01_couplers/s01_data_fifo/m_axi_rid'(1) to net 's01_data_fifo_to_s01_couplers_RID'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_hp0/s02_couplers/s02_data_fifo/m_axi_bid'(1) to net 's02_data_fifo_to_s02_couplers_BID'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_hp0/s02_couplers/s02_data_fifo/m_axi_rid'(1) to net 's02_data_fifo_to_s02_couplers_RID'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_hp0/s03_couplers/s03_data_fifo/m_axi_bid'(1) to net 's03_data_fifo_to_s03_couplers_BID'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_hp0/s03_couplers/s03_data_fifo/m_axi_rid'(1) to net 's03_data_fifo_to_s03_couplers_RID'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_hp0/m00_couplers/m00_regslice/m_axi_bid'(3) to net 'm00_regslice_to_m00_couplers_BID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_hp0/m00_couplers/m00_regslice/m_axi_rid'(3) to net 'm00_regslice_to_m00_couplers_RID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_hp0/s00_mmu/s_axi_arlock'(1) to net 'S00_AXI_1_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_hp0/s00_mmu/s_axi_awlock'(1) to net 'S00_AXI_1_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_hp0/xbar/s_axi_awid'(3) to net 's00_couplers_to_xbar_AWID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_hp0/xbar/s_axi_arid'(3) to net 's00_couplers_to_xbar_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_hp0/xbar/s_axi_awid'(3) to net 's03_couplers_to_xbar_AWID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_hp0/xbar/s_axi_arid'(3) to net 's03_couplers_to_xbar_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_hp0/s01_mmu/s_axi_arlock'(1) to net 'S01_AXI_1_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_hp0/s01_mmu/s_axi_awlock'(1) to net 'S01_AXI_1_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_hp0/s02_mmu/s_axi_arlock'(1) to net 'S02_AXI_1_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_hp0/s02_mmu/s_axi_awlock'(1) to net 'S02_AXI_1_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_hp0/s03_mmu/s_axi_arlock'(1) to net 'S03_AXI_1_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_hp0/s03_mmu/s_axi_awlock'(1) to net 'S03_AXI_1_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_hp0/xbar/s_axi_awid'(3) to net 's01_couplers_to_xbar_AWID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_hp0/xbar/s_axi_arid'(3) to net 's01_couplers_to_xbar_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_hp0/xbar/s_axi_awid'(3) to net 's02_couplers_to_xbar_AWID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_hp0/xbar/s_axi_arid'(3) to net 's02_couplers_to_xbar_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_hp1/m00_couplers/m00_regslice/m_axi_bid'(2) to net 'm00_regslice_to_m00_couplers_BID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_hp1/m00_couplers/m00_regslice/m_axi_rid'(2) to net 'm00_regslice_to_m00_couplers_RID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/zynq_ultra_ps_e_0/saxigp2_awid'(6) to net 'axi_interconnect_hp2_M00_AXI_AWID'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/zynq_ultra_ps_e_0/saxigp2_arid'(6) to net 'axi_interconnect_hp2_M00_AXI_ARID'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/zynq_ultra_ps_e_0/saxigp3_awid'(6) to net 'axi_interconnect_hp0_M00_AXI_AWID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/zynq_ultra_ps_e_0/saxigp3_arid'(6) to net 'axi_interconnect_hp0_M00_AXI_ARID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/nv_small_64_v07_0/paddr'(32) to net 'axi_apb_bridge_0_APB_M_PADDR'(40) - Only lower order bits will be connected.
+VHDL Output written to : E:/a38/project_1.srcs/sources_1/bd/zcu102_base_trd/synth/zcu102_base_trd.v
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/hdmi_input/axi_data_fifo_0/s_axi_arlock'(1) to net 'v_frmbuf_wr_0_m_axi_mm_video_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/hdmi_input/axi_data_fifo_0/s_axi_awlock'(1) to net 'v_frmbuf_wr_0_m_axi_mm_video_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/mipi_csi2_rx/v_demosaic_0/s_axis_video_TDEST'(1) to net 'axis_subset_converter_0_M_AXIS_TDEST'(10) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/mipi_csi2_rx/axi_data_fifo_0/s_axi_arlock'(1) to net 'v_frmbuf_wr_0_m_axi_mm_video_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/mipi_csi2_rx/axi_data_fifo_0/s_axi_awlock'(1) to net 'v_frmbuf_wr_0_m_axi_mm_video_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/tpg_input/axi_data_fifo_0/s_axi_arlock'(1) to net 'v_frmbuf_wr_0_m_axi_mm_video_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/tpg_input/axi_data_fifo_0/s_axi_awlock'(1) to net 'v_frmbuf_wr_0_m_axi_mm_video_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_hp0/s00_couplers/s00_data_fifo/m_axi_bid'(1) to net 's00_data_fifo_to_s00_couplers_BID'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_hp0/s00_couplers/s00_data_fifo/m_axi_rid'(1) to net 's00_data_fifo_to_s00_couplers_RID'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_hp0/s01_couplers/s01_data_fifo/m_axi_bid'(1) to net 's01_data_fifo_to_s01_couplers_BID'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_hp0/s01_couplers/s01_data_fifo/m_axi_rid'(1) to net 's01_data_fifo_to_s01_couplers_RID'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_hp0/s02_couplers/s02_data_fifo/m_axi_bid'(1) to net 's02_data_fifo_to_s02_couplers_BID'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_hp0/s02_couplers/s02_data_fifo/m_axi_rid'(1) to net 's02_data_fifo_to_s02_couplers_RID'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_hp0/s03_couplers/s03_data_fifo/m_axi_bid'(1) to net 's03_data_fifo_to_s03_couplers_BID'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_hp0/s03_couplers/s03_data_fifo/m_axi_rid'(1) to net 's03_data_fifo_to_s03_couplers_RID'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_hp0/m00_couplers/m00_regslice/m_axi_bid'(3) to net 'm00_regslice_to_m00_couplers_BID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_hp0/m00_couplers/m00_regslice/m_axi_rid'(3) to net 'm00_regslice_to_m00_couplers_RID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_hp0/s00_mmu/s_axi_arlock'(1) to net 'S00_AXI_1_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_hp0/s00_mmu/s_axi_awlock'(1) to net 'S00_AXI_1_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_hp0/xbar/s_axi_awid'(3) to net 's00_couplers_to_xbar_AWID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_hp0/xbar/s_axi_arid'(3) to net 's00_couplers_to_xbar_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_hp0/xbar/s_axi_awid'(3) to net 's03_couplers_to_xbar_AWID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_hp0/xbar/s_axi_arid'(3) to net 's03_couplers_to_xbar_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_hp0/s01_mmu/s_axi_arlock'(1) to net 'S01_AXI_1_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_hp0/s01_mmu/s_axi_awlock'(1) to net 'S01_AXI_1_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_hp0/s02_mmu/s_axi_arlock'(1) to net 'S02_AXI_1_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_hp0/s02_mmu/s_axi_awlock'(1) to net 'S02_AXI_1_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_hp0/s03_mmu/s_axi_arlock'(1) to net 'S03_AXI_1_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_hp0/s03_mmu/s_axi_awlock'(1) to net 'S03_AXI_1_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_hp0/xbar/s_axi_awid'(3) to net 's01_couplers_to_xbar_AWID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_hp0/xbar/s_axi_arid'(3) to net 's01_couplers_to_xbar_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_hp0/xbar/s_axi_awid'(3) to net 's02_couplers_to_xbar_AWID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_hp0/xbar/s_axi_arid'(3) to net 's02_couplers_to_xbar_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_hp1/m00_couplers/m00_regslice/m_axi_bid'(2) to net 'm00_regslice_to_m00_couplers_BID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_hp1/m00_couplers/m00_regslice/m_axi_rid'(2) to net 'm00_regslice_to_m00_couplers_RID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/zynq_ultra_ps_e_0/saxigp2_awid'(6) to net 'axi_interconnect_hp2_M00_AXI_AWID'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/zynq_ultra_ps_e_0/saxigp2_arid'(6) to net 'axi_interconnect_hp2_M00_AXI_ARID'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/zynq_ultra_ps_e_0/saxigp3_awid'(6) to net 'axi_interconnect_hp0_M00_AXI_AWID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/zynq_ultra_ps_e_0/saxigp3_arid'(6) to net 'axi_interconnect_hp0_M00_AXI_ARID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/nv_small_64_v07_0/paddr'(32) to net 'axi_apb_bridge_0_APB_M_PADDR'(40) - Only lower order bits will be connected.
+VHDL Output written to : E:/a38/project_1.srcs/sources_1/bd/zcu102_base_trd/sim/zcu102_base_trd.v
+VHDL Output written to : E:/a38/project_1.srcs/sources_1/bd/zcu102_base_trd/hdl/zcu102_base_trd_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_intc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block hdmi_ctl_iic .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block interrupts0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block interrupts1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block platform_interrupts .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sensor_iic .
+INFO: [Device 21-403] Loading part xczu9eg-ffvb1156-2-e
+INFO: [BD 41-1029] Generation completed for the IP Integrator block vid_phy_controller_0 .
+INFO: [xilinx.com:ip:zynq_ultra_ps_e:3.2-0] zcu102_base_trd_zynq_ultra_ps_e_0_0: 
+Changes in your design (including the PCW configuration settings) are not automatically exported from Vivado to Xilinx's SDK, Petalinux or Yocto.
+This is by design to avoid disrupting existing embedded development efforts. To have any changes of your design taking effect in the embedded software flow please export your
+design by going through Vivado's main menu, click on File, then Export finally select Export Hardware, please ensure you click on the Include BitStream option.
+The auto-generated HDF file is all you need to import in Xilinx's SDK, Petalinux or Yocto for your changes to be reflected in the Embedded Software Flow.
+For more information, please consult PG201, section: Exporting PCW Settings to Embedded Software Flows
+INFO: [BD 41-1029] Generation completed for the IP Integrator block zynq_ultra_ps_e_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/a38/project_1.srcs/sources_1/bd/zcu102_base_trd/ip/zcu102_base_trd_axi_data_fifo_0_2/zcu102_base_trd_axi_data_fifo_0_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block tpg_input/axi_data_fifo_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block tpg_input/clk_mux_gpio .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block tpg_input/clock_mux_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block tpg_input/frmbuf_wr_rst_gpio .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block tpg_input/tpg_rst_gpio .
+WARNING: [IP_Flow 19-1971] File named "sim/zcu102_base_trd_v_frmbuf_wr_0_2.v" already exists in file group "xilinx_verilogsimulationwrapper", cannot add it again.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block tpg_input/v_frmbuf_wr_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block tpg_input/v_tc_1 .
+WARNING: [IP_Flow 19-1971] File named "sim/zcu102_base_trd_v_tpg_1_0.v" already exists in file group "xilinx_verilogsimulationwrapper", cannot add it again.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block tpg_input/v_tpg_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block tpg_input/v_vid_in_axi4s_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block tpg_input/zero_48bit .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/a38/project_1.srcs/sources_1/bd/zcu102_base_trd/ip/zcu102_base_trd_axi_data_fifo_0_1/zcu102_base_trd_axi_data_fifo_0_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mipi_csi2_rx/axi_data_fifo_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mipi_csi2_rx/axis_subset_converter_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mipi_csi2_rx/demosaic_rst_gpio .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mipi_csi2_rx/frmbuf_wr_rst_gpio .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mipi_csi2_rx/gamma_rst_gpio .
+Exporting to file e:/a38/project_1.srcs/sources_1/bd/zcu102_base_trd/ip/zcu102_base_trd_mipi_csi2_rx_subsystem_0_0/bd_0/hw_handoff/zcu102_base_trd_mipi_csi2_rx_subsystem_0_0.hwh
+Generated Block Design Tcl file e:/a38/project_1.srcs/sources_1/bd/zcu102_base_trd/ip/zcu102_base_trd_mipi_csi2_rx_subsystem_0_0/bd_0/hw_handoff/zcu102_base_trd_mipi_csi2_rx_subsystem_0_0_bd.tcl
+Generated Hardware Definition File e:/a38/project_1.srcs/sources_1/bd/zcu102_base_trd/ip/zcu102_base_trd_mipi_csi2_rx_subsystem_0_0/bd_0/synth/zcu102_base_trd_mipi_csi2_rx_subsystem_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mipi_csi2_rx/mipi_csi2_rx_subsystem_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mipi_csi2_rx/sensor_rst_gpio .
+WARNING: [IP_Flow 19-1971] File named "sim/zcu102_base_trd_v_demosaic_0_0.v" already exists in file group "xilinx_verilogsimulationwrapper", cannot add it again.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mipi_csi2_rx/v_demosaic_0 .
+WARNING: [IP_Flow 19-1971] File named "sim/zcu102_base_trd_v_frmbuf_wr_0_1.v" already exists in file group "xilinx_verilogsimulationwrapper", cannot add it again.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mipi_csi2_rx/v_frmbuf_wr_0 .
+WARNING: [IP_Flow 19-1971] File named "sim/zcu102_base_trd_v_gamma_lut_0_0.v" already exists in file group "xilinx_verilogsimulationwrapper", cannot add it again.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mipi_csi2_rx/v_gamma_lut_0 .
+WARNING: [IP_Flow 19-1971] File named "sim/bd_32f5_csc_0.v" already exists in file group "xilinx_verilogsimulationwrapper", cannot add it again.
+Exporting to file e:/a38/project_1.srcs/sources_1/bd/zcu102_base_trd/ip/zcu102_base_trd_v_proc_ss_csc_0/bd_0/hw_handoff/zcu102_base_trd_v_proc_ss_csc_0.hwh
+Generated Block Design Tcl file e:/a38/project_1.srcs/sources_1/bd/zcu102_base_trd/ip/zcu102_base_trd_v_proc_ss_csc_0/bd_0/hw_handoff/zcu102_base_trd_v_proc_ss_csc_0_bd.tcl
+Generated Hardware Definition File e:/a38/project_1.srcs/sources_1/bd/zcu102_base_trd/ip/zcu102_base_trd_v_proc_ss_csc_0/bd_0/synth/zcu102_base_trd_v_proc_ss_csc_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mipi_csi2_rx/v_proc_ss_csc .
+WARNING: [IP_Flow 19-1971] File named "sim/bd_8a59_vsc_0.v" already exists in file group "xilinx_verilogsimulationwrapper", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "sim/bd_8a59_hsc_0.v" already exists in file group "xilinx_verilogsimulationwrapper", cannot add it again.
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/a38/project_1.srcs/sources_1/bd/zcu102_base_trd/ip/zcu102_base_trd_v_proc_ss_scaler_1/bd_0/ip/ip_11/bd_8a59_auto_cc_0_ooc.xdc'
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/a38/project_1.srcs/sources_1/bd/zcu102_base_trd/ip/zcu102_base_trd_v_proc_ss_scaler_1/bd_0/ip/ip_12/bd_8a59_auto_cc_1_ooc.xdc'
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/a38/project_1.srcs/sources_1/bd/zcu102_base_trd/ip/zcu102_base_trd_v_proc_ss_scaler_1/bd_0/ip/ip_13/bd_8a59_auto_cc_2_ooc.xdc'
+Exporting to file e:/a38/project_1.srcs/sources_1/bd/zcu102_base_trd/ip/zcu102_base_trd_v_proc_ss_scaler_1/bd_0/hw_handoff/zcu102_base_trd_v_proc_ss_scaler_1.hwh
+Generated Block Design Tcl file e:/a38/project_1.srcs/sources_1/bd/zcu102_base_trd/ip/zcu102_base_trd_v_proc_ss_scaler_1/bd_0/hw_handoff/zcu102_base_trd_v_proc_ss_scaler_1_bd.tcl
+Generated Hardware Definition File e:/a38/project_1.srcs/sources_1/bd/zcu102_base_trd/ip/zcu102_base_trd_v_proc_ss_scaler_1/bd_0/synth/zcu102_base_trd_v_proc_ss_scaler_1.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mipi_csi2_rx/v_proc_ss_scaler .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mipi_csi2_rx/vcc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mipi_csi2_rx/vpss_csc_rst_gpio .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mipi_csi2_rx/vpss_scaler_rst_gpio .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block hdmi_output/hdmi_hb_tx .
+Exporting to file e:/a38/project_1.srcs/sources_1/bd/zcu102_base_trd/ip/zcu102_base_trd_v_hdmi_tx_ss_0_0/bd_0/hw_handoff/zcu102_base_trd_v_hdmi_tx_ss_0_0.hwh
+Generated Block Design Tcl file e:/a38/project_1.srcs/sources_1/bd/zcu102_base_trd/ip/zcu102_base_trd_v_hdmi_tx_ss_0_0/bd_0/hw_handoff/zcu102_base_trd_v_hdmi_tx_ss_0_0_bd.tcl
+Generated Hardware Definition File e:/a38/project_1.srcs/sources_1/bd/zcu102_base_trd/ip/zcu102_base_trd_v_hdmi_tx_ss_0_0/bd_0/synth/zcu102_base_trd_v_hdmi_tx_ss_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block hdmi_output/v_hdmi_tx_ss_0 .
+WARNING: [IP_Flow 19-1971] File named "sim/zcu102_base_trd_v_mix_0_0.v" already exists in file group "xilinx_verilogsimulationwrapper", cannot add it again.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block hdmi_output/v_mix_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block hdmi_output/v_mix_rst_gpio .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block hdmi_output/vcc_const .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block hdmi_output/xlconstant_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/a38/project_1.srcs/sources_1/bd/zcu102_base_trd/ip/zcu102_base_trd_axi_data_fifo_0_0/zcu102_base_trd_axi_data_fifo_0_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block hdmi_input/axi_data_fifo_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block hdmi_input/frmbuf_wr_rst_gpio .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block hdmi_input/hdmi_hb_rx .
+WARNING: [IP_Flow 19-1971] File named "sim/zcu102_base_trd_v_frmbuf_wr_0_0.v" already exists in file group "xilinx_verilogsimulationwrapper", cannot add it again.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block hdmi_input/v_frmbuf_wr_0 .
+Exporting to file e:/a38/project_1.srcs/sources_1/bd/zcu102_base_trd/ip/zcu102_base_trd_v_hdmi_rx_ss_0_0/bd_0/hw_handoff/zcu102_base_trd_v_hdmi_rx_ss_0_0.hwh
+Generated Block Design Tcl file e:/a38/project_1.srcs/sources_1/bd/zcu102_base_trd/ip/zcu102_base_trd_v_hdmi_rx_ss_0_0/bd_0/hw_handoff/zcu102_base_trd_v_hdmi_rx_ss_0_0_bd.tcl
+Generated Hardware Definition File e:/a38/project_1.srcs/sources_1/bd/zcu102_base_trd/ip/zcu102_base_trd_v_hdmi_rx_ss_0_0/bd_0/synth/zcu102_base_trd_v_hdmi_rx_ss_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block hdmi_input/v_hdmi_rx_ss_0 .
+WARNING: [IP_Flow 19-1971] File named "sim/bd_4a98_vsc_0.v" already exists in file group "xilinx_verilogsimulationwrapper", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "sim/bd_4a98_hsc_0.v" already exists in file group "xilinx_verilogsimulationwrapper", cannot add it again.
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/a38/project_1.srcs/sources_1/bd/zcu102_base_trd/ip/zcu102_base_trd_v_proc_ss_scaler_0/bd_0/ip/ip_11/bd_4a98_auto_cc_0_ooc.xdc'
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/a38/project_1.srcs/sources_1/bd/zcu102_base_trd/ip/zcu102_base_trd_v_proc_ss_scaler_0/bd_0/ip/ip_12/bd_4a98_auto_cc_1_ooc.xdc'
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/a38/project_1.srcs/sources_1/bd/zcu102_base_trd/ip/zcu102_base_trd_v_proc_ss_scaler_0/bd_0/ip/ip_13/bd_4a98_auto_cc_2_ooc.xdc'
+Exporting to file e:/a38/project_1.srcs/sources_1/bd/zcu102_base_trd/ip/zcu102_base_trd_v_proc_ss_scaler_0/bd_0/hw_handoff/zcu102_base_trd_v_proc_ss_scaler_0.hwh
+Generated Block Design Tcl file e:/a38/project_1.srcs/sources_1/bd/zcu102_base_trd/ip/zcu102_base_trd_v_proc_ss_scaler_0/bd_0/hw_handoff/zcu102_base_trd_v_proc_ss_scaler_0_bd.tcl
+Generated Hardware Definition File e:/a38/project_1.srcs/sources_1/bd/zcu102_base_trd/ip/zcu102_base_trd_v_proc_ss_scaler_0/bd_0/synth/zcu102_base_trd_v_proc_ss_scaler_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block hdmi_input/v_proc_ss_scaler .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block hdmi_input/vpss_scaler_rst_gpio .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dru_clk/const_vcc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dru_clk/dru_ibufds_gt .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dru_clk/dru_ibufds_gt_odiv2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_apb_bridge_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_hp0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_hp1/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_hpm0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_hpm1/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block nv_small_64_v07_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_hp0/s00_couplers/s00_regslice .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/a38/project_1.srcs/sources_1/bd/zcu102_base_trd/ip/zcu102_base_trd_s00_data_fifo_1/zcu102_base_trd_s00_data_fifo_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_hp0/s00_couplers/s00_data_fifo .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_hp0/s01_couplers/s01_regslice .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/a38/project_1.srcs/sources_1/bd/zcu102_base_trd/ip/zcu102_base_trd_s01_data_fifo_1/zcu102_base_trd_s01_data_fifo_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_hp0/s01_couplers/s01_data_fifo .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_hp0/s02_couplers/s02_regslice .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/a38/project_1.srcs/sources_1/bd/zcu102_base_trd/ip/zcu102_base_trd_s02_data_fifo_1/zcu102_base_trd_s02_data_fifo_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_hp0/s02_couplers/s02_data_fifo .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_hp0/s03_couplers/s03_regslice .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/a38/project_1.srcs/sources_1/bd/zcu102_base_trd/ip/zcu102_base_trd_s03_data_fifo_0/zcu102_base_trd_s03_data_fifo_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_hp0/s03_couplers/s03_data_fifo .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/a38/project_1.srcs/sources_1/bd/zcu102_base_trd/ip/zcu102_base_trd_m00_data_fifo_1/zcu102_base_trd_m00_data_fifo_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_hp0/m00_couplers/m00_data_fifo .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_hp0/m00_couplers/m00_regslice .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_hp0/s00_mmu .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_hp0/s01_mmu .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_hp0/s02_mmu .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_hp0/s03_mmu .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_hp1/s00_couplers/s00_regslice .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/a38/project_1.srcs/sources_1/bd/zcu102_base_trd/ip/zcu102_base_trd_s00_data_fifo_0/zcu102_base_trd_s00_data_fifo_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_hp1/s00_couplers/s00_data_fifo .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_hp1/s01_couplers/s01_regslice .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/a38/project_1.srcs/sources_1/bd/zcu102_base_trd/ip/zcu102_base_trd_s01_data_fifo_0/zcu102_base_trd_s01_data_fifo_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_hp1/s01_couplers/s01_data_fifo .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_hp1/s02_couplers/s02_regslice .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/a38/project_1.srcs/sources_1/bd/zcu102_base_trd/ip/zcu102_base_trd_s02_data_fifo_0/zcu102_base_trd_s02_data_fifo_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_hp1/s02_couplers/s02_data_fifo .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/a38/project_1.srcs/sources_1/bd/zcu102_base_trd/ip/zcu102_base_trd_m00_data_fifo_0/zcu102_base_trd_m00_data_fifo_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_hp1/m00_couplers/m00_data_fifo .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_hp1/m00_couplers/m00_regslice .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_hp1/s00_mmu .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_hp1/s01_mmu .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_hp1/s02_mmu .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/a38/project_1.srcs/sources_1/bd/zcu102_base_trd/ip/zcu102_base_trd_auto_pc_0/zcu102_base_trd_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_hpm0/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/a38/project_1.srcs/sources_1/bd/zcu102_base_trd/ip/zcu102_base_trd_auto_cc_0/zcu102_base_trd_auto_cc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_hpm0/m08_couplers/auto_cc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_hpm1/s00_couplers/s00_regslice .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/a38/project_1.srcs/sources_1/bd/zcu102_base_trd/ip/zcu102_base_trd_auto_pc_1/zcu102_base_trd_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_hpm1/s00_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_hpm1/m00_couplers/m00_regslice .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_hpm1/m01_couplers/m01_regslice .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_hpm1/m02_couplers/m02_regslice .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_hpm1/m03_couplers/m03_regslice .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_hpm1/m04_couplers/m04_regslice .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_hpm1/m05_couplers/m05_regslice .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_hpm1/m06_couplers/m06_regslice .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_hpm1/m07_couplers/m07_regslice .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_hpm1/m08_couplers/m08_regslice .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_hpm1/m09_couplers/m09_regslice .
+Exporting to file E:/a38/project_1.srcs/sources_1/bd/zcu102_base_trd/hw_handoff/zcu102_base_trd.hwh
+Generated Block Design Tcl file E:/a38/project_1.srcs/sources_1/bd/zcu102_base_trd/hw_handoff/zcu102_base_trd_bd.tcl
+Generated Hardware Definition File E:/a38/project_1.srcs/sources_1/bd/zcu102_base_trd/synth/zcu102_base_trd.hwdef
+[Tue Sep 10 11:04:40 2019] Launched synth_1...
+Run output will be captured here: E:/a38/project_1.runs/synth_1/runme.log
+[Tue Sep 10 11:04:40 2019] Launched impl_1...
+Run output will be captured here: E:/a38/project_1.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:05:16 ; elapsed = 00:03:53 . Memory (MB): peak = 2681.465 ; gain = 1260.484
+reset_run synth_1
+save_bd_design
+Wrote  : <E:/a38/project_1.srcs/sources_1/bd/zcu102_base_trd/ui/bd_e3524bf0.ui> 
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Sep 10 11:05:05 2019...

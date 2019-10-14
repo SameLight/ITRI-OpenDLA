@@ -1,0 +1,255 @@
+{
+   "Display-IntfAXI4Lite":"false",
+   "Display-PortTypeClock":"true",
+   "Display-PortTypeInterrupt":"false",
+   "Display-PortTypeOthers":"true",
+   "Display-PortTypeReset":"false",
+   "DisplayPinAutomationMissing":"1",
+   "DisplayPinsOfHiddenNets":"1",
+   "DisplayTieOff":"1",
+   "ExpandedHierarchyInLayout":"",
+   "comment_0":"Zynq UltraScale+ MPSoC Base TRD",
+   "comment_1":"Interrupts
+--------
+89: TPG FB WR
+90: HDMI Rx FB WR
+91: HDMI Rx SS
+92: VPHY
+93: HDMI Tx SS
+94: HDMI CTL IIC
+95: CSI Rx
+96: CSI FB WR
+104: Sensor IIC
+105: Video Mixer",
+   "comment_2":"GPIOs
+-----
+78: TPG clock mux
+79: TPG rst
+80: CSI FB WR rst
+81: TPG FB WR rst
+82: CSI VPSS Scaler rst
+83: Video Mixer rst
+84: CSI VPSS CSC rst
+85: CSI Demosaic rst
+86: CSI Gamma rst
+87: HDMI Rx VPSS Scaler rst
+88: HDMI Rx FB WR rst
+89:
+90: Sensor rst",
+   "comment_3":"GPIOs
+-----
+78: TPG clock mux
+79: TPG rst
+80: CSI FB WR rst
+81: TPG FB WR rst
+82: CSI VPSS Scaler rst
+83: Video Mixer rst
+84: CSI VPSS CSC rst
+85: CSI Demosaic rst
+86: CSI Gamma rst
+87: HDMI Rx VPSS Scaler rst
+88: HDMI Rx FB WR rst
+89:
+90: Sensor rst",
+   "comment_4":"Interrupts
+--------
+89: TPG FB WR
+90: HDMI Rx FB WR
+91: HDMI Rx SS
+92: VPHY
+93: HDMI Tx SS
+94: HDMI CTL IIC
+95: CSI Rx
+96: CSI FB WR
+104: Sensor IIC
+105: Video Mixer",
+   "comment_5":"Zynq UltraScale+ MPSoC Base TRD",
+   "comment_6":"GPIOs
+-----
+78: TPG clock mux
+79: TPG rst
+80: CSI FB WR rst
+81: TPG FB WR rst
+82: CSI VPSS Scaler rst
+83: Video Mixer rst
+84: CSI VPSS CSC rst
+85: CSI Demosaic rst
+86: CSI Gamma rst
+87: HDMI Rx VPSS Scaler rst
+88: HDMI Rx FB WR rst
+89:
+90: Sensor rst",
+   "commentid":"comment_0|comment_1|comment_2|comment_3|comment_4|comment_5|comment_6|",
+   "fillcolor_comment_0":"",
+   "fillcolor_comment_1":"",
+   "fillcolor_comment_2":"",
+   "fillcolor_comment_3":"",
+   "fillcolor_comment_4":"",
+   "font_comment_0":"54",
+   "font_comment_1":"14",
+   "font_comment_2":"14",
+   "font_comment_3":"14",
+   "font_comment_4":"14",
+   "font_comment_5":"14",
+   "font_comment_6":"14",
+   "guistr":"# # String gsaved with Nlview 6.8.11  2018-08-07 bk=1.4403 VDI=40 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port hdmi_tx_clk_n_out -pg 1 -y 2690 -defaultsOSRD
+preplace port sensor_iic -pg 1 -y 1364 -defaultsOSRD
+preplace port hdmi_rx_clk_n_in -pg 1 -y 1900 -defaultsOSRD
+preplace port si5324_clk_n_in -pg 1 -y 2050 -defaultsOSRD
+preplace port dru_clk_in -pg 1 -y 1960 -defaultsOSRD
+preplace port hdmi_rx_clk_p_in -pg 1 -y 1880 -defaultsOSRD
+preplace port hdmi_rx_hb_led -pg 1 -y 1878 -defaultsOSRD
+preplace port hdmi_tx_ddc_out -pg 1 -y 1750 -defaultsOSRD
+preplace port hdmi_rx_ddc_out -pg 1 -y 1844 -defaultsOSRD
+preplace port hdmi_tx_hpd_in -pg 1 -y 1810 -defaultsOSRD
+preplace port csi_mipi_phy_if -pg 1 -y 1610 -defaultsOSRD
+preplace port si5324_clk_p_in -pg 1 -y 2030 -defaultsOSRD
+preplace port hdmi_tx_locked_led -pg 1 -y 1810 -defaultsOSRD
+preplace port hdmi_rx_det_in -pg 1 -y 1860 -defaultsOSRD
+preplace port hdmi_ctl_iic -pg 1 -y 1234 -defaultsOSRD
+preplace port hdmi_tx_clk_p_out -pg 1 -y 2670 -defaultsOSRD
+preplace port si5324_lol_in -pg 1 -y 2010 -defaultsOSRD
+preplace port hdmi_tx_hb_led -pg 1 -y 1790 -defaultsOSRD
+preplace portBus hdmi_tx_dat_p_out -pg 1 -y 2730 -defaultsOSRD
+preplace portBus si5324_rst_out -pg 1 -y 20 -defaultsOSRD
+preplace portBus sensor_gpio_rst -pg 1 -y 1599 -defaultsOSRD
+preplace portBus hdmi_rx_hpd_out -pg 1 -y 1900 -defaultsOSRD
+preplace portBus hdmi_tx_dat_n_out -pg 1 -y 2710 -defaultsOSRD
+preplace portBus hdmi_rx_dat_n_in -pg 1 -y 2070 -defaultsOSRD
+preplace portBus sensor_gpio_flash -pg 1 -y 1620 -defaultsOSRD
+preplace portBus hdmi_rx_dat_p_in -pg 1 -y 2090 -defaultsOSRD
+preplace portBus sensor_gpio_spi_cs_n -pg 1 -y 1640 -defaultsOSRD
+preplace portBus hdmi_tx_en_out -pg 1 -y 1770 -defaultsOSRD
+preplace inst sensor_iic -pg 1 -lvl 8 -y 1400 -defaultsOSRD
+preplace inst axi_interconnect_hp1 -pg 1 -lvl 6 -y 1240 -defaultsOSRD
+preplace inst zynq_ultra_ps_e_0 -pg 1 -lvl 7 -y 919 -defaultsOSRD -resize 497 368
+preplace inst nv_small_64_v07_0 -pg 1 -lvl 4 -y 410 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 3 -y 450 -defaultsOSRD
+preplace inst axi_intc_0 -pg 1 -lvl 6 -y 2840 -defaultsOSRD
+preplace inst hdmi_output -pg 1 -lvl 2 -y 1810 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 3 -y 550 -defaultsOSRD
+preplace inst axi_interconnect_hpm0 -pg 1 -lvl 8 -y 1080 -defaultsOSRD -resize 212 198
+preplace inst xlconstant_2 -pg 1 -lvl 3 -y 720 -defaultsOSRD
+preplace inst axi_interconnect_hpm1 -pg 1 -lvl 8 -y 850 -defaultsOSRD -resize 217 208
+preplace inst tpg_input -pg 1 -lvl 5 -y 1150 -defaultsOSRD -resize 207 123
+preplace inst hdmi_input -pg 1 -lvl 5 -y 1790 -defaultsOSRD -resize 212 169
+preplace inst proc_sys_reset_1 -pg 1 -lvl 6 -y 1530 -defaultsOSRD
+preplace inst platform_interrupts -pg 1 -lvl 5 -y 2900 -defaultsOSRD
+preplace inst axi_apb_bridge_0 -pg 1 -lvl 3 -y 270 -defaultsOSRD
+preplace inst interrupts0 -pg 1 -lvl 5 -y 990 -defaultsOSRD
+preplace inst vid_phy_controller_0 -pg 1 -lvl 3 -y 2020 -defaultsOSRD
+preplace inst hdmi_ctl_iic -pg 1 -lvl 8 -y 1260 -defaultsOSRD
+preplace inst clk_wiz_1 -pg 1 -lvl 1 -y 1160 -defaultsOSRD
+preplace inst mipi_csi2_rx -pg 1 -lvl 5 -y 1480 -defaultsOSRD
+preplace inst interrupts1 -pg 1 -lvl 5 -y 2640 -defaultsOSRD -resize 100 88
+preplace inst dru_clk -pg 1 -lvl 1 -y 1960 -defaultsOSRD
+preplace inst axi_interconnect_hp0 -pg 1 -lvl 3 -y 1400 -defaultsOSRD
+preplace netloc S00_AXI_2 1 5 1 2240
+preplace netloc axi_interconnect_hp2_M00_AXI 1 3 4 1350J 930 NJ 930 NJ 930 2680
+preplace netloc hdmi_output_locked 1 2 7 920J 1740 1370J 1806 1800J 1900 2290J 1818 NJ 1818 NJ 1818 3840J
+preplace netloc si5324_lol_in_1 1 0 3 0J 1650 400J 1600 870J
+preplace netloc vid_phy_controller_0_phy_txn_out 1 3 6 NJ 2110 NJ 2110 NJ 2110 NJ 2110 NJ 2110 3820J
+preplace netloc v_hdmi_tx_ss_0_LINK_DATA1_OUT 1 2 1 820
+preplace netloc mgtrefclk0_pad_p_in_1 1 0 3 NJ 2030 NJ 2030 930J
+preplace netloc v_hdmi_tx_ss_0_DDC_OUT 1 2 7 NJ 1690 NJ 1690 1810J 1680 NJ 1680 NJ 1680 NJ 1680 3830J
+preplace netloc mipi_csi2_rx_M_AXI_S2MM 1 5 1 2230
+preplace netloc axi_iic_0_IIC 1 8 1 3840J
+preplace netloc hdmi_input_DDC_OUT 1 5 4 NJ 1744 NJ 1744 NJ 1744 3820J
+preplace netloc vid_phy_controller_0_txoutclk 1 1 3 430 2070 930 2290 1390
+preplace netloc v_hdmi_tx_ss_0_LINK_DATA2_OUT 1 2 1 840
+preplace netloc zynq_ultra_ps_e_0_emio_gpio_o 1 1 7 410 1610 NJ 1610 N 1610 1870J 1060 NJ 1060 2670J 1169 3490
+preplace netloc hdmi_output_dout 1 2 7 800J 1720 NJ 1720 1800J 1670 NJ 1670 NJ 1670 NJ 1670 3840J
+preplace netloc mgtrefclk1_pad_n_in_1 1 0 3 -20J 1630 380J 1570 900J
+preplace netloc hdmi_output_m_axi_mm_video2 1 2 1 810
+preplace netloc util_ds_buf_0_IBUF_OUT 1 1 2 320 1990 NJ
+preplace netloc hdmi_output_m_axi_mm_video3 1 2 1 850
+preplace netloc interrupts1_dout 1 5 2 2270J 1040 2710J
+preplace netloc zynq_ultra_ps_e_0_dp_video_ref_clk 1 4 4 1890J 1070 2240J 1050 2680J 1159 3480
+preplace netloc util_ds_buf_1_BUFG_GT_O 1 1 2 370 2010 NJ
+preplace netloc vid_phy_controller_0_rxoutclk 1 2 3 950 1750 1360 1816 1820
+preplace netloc hdmi_output_hdmi_hb 1 2 7 830J 1730 1380J 1796 1810J 1890 2280J 1808 NJ 1808 NJ 1808 3810J
+preplace netloc vid_phy_controller_0_vid_phy_status_sb_rx 1 3 2 1430 1786 1850
+preplace netloc xlconstant_1_dout 1 3 1 1360
+preplace netloc mipi_csi2_rx_Dout 1 5 4 2250J 1420 NJ 1420 3520J 1599 NJ
+preplace netloc phy_rxn_in_1 1 0 3 -10J 2040 NJ 2040 940J
+preplace netloc mipi_phy_if_0_1 1 0 5 NJ 1610 350J 1190 NJ 1190 NJ 1190 1810J
+preplace netloc hpd_1 1 0 2 NJ 1810 NJ
+preplace netloc interrupts0_dout 1 5 2 2270 1000 2740J
+preplace netloc CLK_IN_D_2 1 0 1 NJ
+preplace netloc vid_phy_controller_0_vid_phy_status_sb_tx 1 1 3 430 1630 NJ 1630 1350
+preplace netloc axi_apb_bridge_0_APB_M 1 3 1 1430
+preplace netloc vid_phy_controller_0_vid_phy_rx_axi4s_ch0 1 3 2 1390 1766 1830
+preplace netloc mgtrefclk1_pad_p_in_1 1 0 3 -10J 1640 390J 1590 880J
+preplace netloc vid_phy_controller_0_vid_phy_rx_axi4s_ch1 1 3 2 1420 1776 1840
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM1_FPD 1 7 1 3470
+preplace netloc hdmi_input_hpd 1 5 4 NJ 1798 NJ 1798 NJ 1798 3790J
+preplace netloc hdmi_input_hdmi_hb 1 5 4 NJ 1780 NJ 1780 NJ 1780 3800J
+preplace netloc xlconstant_2_dout 1 3 1 1410
+preplace netloc vid_phy_controller_0_vid_phy_rx_axi4s_ch2 1 3 2 1400 1756 N
+preplace netloc phy_rxp_in_1 1 0 3 NJ 2090 420J 2050 NJ
+preplace netloc clk_50mhz 1 1 7 370 1580 860 1640 N 1640 1890 1240 2260 1020 2720 1179 3530
+preplace netloc tpg_input_M_AXI_S2MM 1 5 1 2250
+preplace netloc clk_wiz_1_locked 1 1 5 340J 1180 NJ 1180 NJ 1180 1880 1230 2220
+preplace netloc v_hdmi_tx_ss_0_LINK_DATA0_OUT 1 2 1 910
+preplace netloc vcc_dout 1 5 4 2290J 1430 NJ 1430 3480J 1609 3840J
+preplace netloc vid_phy_controller_0_tx_tmds_clk_n 1 3 6 NJ 2010 NJ 2010 NJ 2010 NJ 2010 NJ 2010 3830J
+preplace netloc vid_phy_controller_0_tx_tmds_clk_p 1 3 6 NJ 1990 NJ 1990 NJ 1990 NJ 1990 NJ 1990 3840J
+preplace netloc platform_interrupts_dout 1 5 1 2250J
+preplace netloc clk_wiz_1_clk_out5 1 1 4 330J 1160 NJ 1160 1360 1150 1800
+preplace netloc vid_phy_controller_0_rx_video_clk1 1 3 2 1440 1841 1860
+preplace netloc clk_wiz_1_clk_out6 1 1 7 310J 1040 850 390 1430 620 N 620 N 620 2730 1129 3520J
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_FPD 1 7 1 3500
+preplace netloc vid_phy_controller_0_tx_video_clk1 1 1 4 420 1620 NJ 1620 1410 1160 1810
+preplace netloc xlconstant_0_dout 1 3 1 1350
+preplace netloc nv_small_64_v07_0_m_dbb 1 4 3 NJ 400 NJ 400 2750
+preplace netloc zynq_ultra_ps_e_0_pl_clk0 1 0 8 -30 1040 300J 1050 NJ 1050 NJ 1050 NJ 1050 2220J 1030 2690J 1149 3470
+preplace netloc vid_phy_controller_0_phy_txp_out 1 3 6 NJ 2130 NJ 2130 NJ 2130 NJ 2130 NJ 2130 3800J
+preplace netloc axi_interconnect_hp0_M00_AXI 1 6 1 2700
+preplace netloc cable_detect_1 1 0 5 -30J 1620 360J 1560 910J 1650 NJ 1650 1820J
+preplace netloc S03_AXI_1 1 2 1 890
+preplace netloc clk_150mhz 1 1 7 320 1170 900 1170 N 1170 1860 1250 2290 1010 2750 1139 3510
+preplace netloc mgtrefclk0_pad_n_in_1 1 0 3 NJ 2050 400J 1980 940J
+preplace netloc sensor_iic_IIC 1 8 1 3840J
+preplace netloc S00_AXI_1 1 2 1 790
+preplace cgraphic comment_3 place right 100 -28 textcolor 4 linecolor 3
+preplace cgraphic comment_2 place left -2400 -151 textcolor 4 linecolor 3 linewidth 2
+preplace cgraphic comment_1 place left -1416 -593 textcolor 4 linecolor 3 linewidth 2
+preplace cgraphic comment_0 place top 2319 37 textcolor 4 linecolor 3 linewidth 0
+preplace cgraphic comment_6 place left 280 0 textcolor 4 linecolor 3
+preplace cgraphic comment_5 place left 280 0 textcolor 4 linecolor 3
+preplace cgraphic comment_4 place top 0 0 textcolor 4 linecolor 3
+levelinfo -pg 1 -50 160 620 1160 1640 2070 2500 3200 3660 3870 -top -20 -bot 3070
+",
+   "linecolor_comment_0":"",
+   "linecolor_comment_1":"",
+   "linecolor_comment_2":"",
+   "linecolor_comment_3":"",
+   "linecolor_comment_4":"",
+   "linktoobj_comment_1":"/interrupts0",
+   "linktoobj_comment_4":"/interrupts0",
+   "linktoobj_comment_5":"",
+   "linktoobj_comment_6":"",
+   "linktotype_comment_1":"bd_cell",
+   "linktotype_comment_4":"bd_cell",
+   "linktotype_comment_5":"bd_design",
+   "linktotype_comment_6":"bd_design",
+   "textcolor_comment_0":"",
+   "textcolor_comment_1":"",
+   "textcolor_comment_2":"",
+   "textcolor_comment_3":"",
+   "textcolor_comment_4":""
+}
+{
+   """"da_axi4_cnt"""":"15"
+}
+{
+   "/comment_0":"comment_5",
+   "/comment_2":"comment_3",
+   "/comment_3":"comment_0",
+   "/comment_4":"comment_6",
+   "/interrupts0/comment_1":"comment_4",
+   "comment_1":"comment_1",
+   "comment_2":"comment_2"
+}
