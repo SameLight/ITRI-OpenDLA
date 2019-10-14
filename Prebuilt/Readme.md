@@ -74,7 +74,9 @@
 
   *  Also, you may visit us and directly bring back the image file.
 
-#### Documents
+
+### Documents
+----------
 
 *  [Petalinux Building Tutorial](./doc/Petalinux%20Tutorial/petalinux_tutorial.pdf)
 
