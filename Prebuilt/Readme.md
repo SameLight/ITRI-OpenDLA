@@ -1,7 +1,7 @@
-### Prebuilt DLA System on ZCU102 or ZCU104
+## Prebuilt DLA System on ZCU102 or ZCU104
 
 
-#### Prebuilt Applications
+### Prebuilt Applications
 ------------------
 
 *  Live camera objection detection (Tiny YOLO), classification (Resnet50)
@@ -15,14 +15,14 @@
 
 **Host System :** Ubuntu 16.04
 
-#### Software Requirements
+### Software Requirements
 --------------------------
 
 *  Vivado&reg; Design Suite 2018.3
 
 *  PetaLinux Tools 2018.3
 
-#### Hardward Requirements
+### Hardward Requirements
 --------------------------
 
 *  ZCU102 Evaluation Board or ZCU104 Evaluation Board
@@ -37,7 +37,7 @@
 
 *  USB Mouse
 
-#### Build an SD image by yourself
+### Build an SD image by yourself
 ----------
 
 * Prepare an SD or micro-SD card, more than 16GB is better.
@@ -49,7 +49,7 @@
        % ./rvm –platform linuxfb
  
 
-#### Directly Apply for an SD image
+### Directly Apply for an SD image (plug and play)
 -------------------------------------------
 
 *  Apply for the prebuilt DLA system with the demos of classification and object detection.
