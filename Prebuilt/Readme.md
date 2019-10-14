@@ -21,8 +21,9 @@
 *  [Demo Start!](./doc/Demo%20Start!/Demo%20Start.pdf)
 
 #### DLA SPEC
-----------
 *  64-MAC NV_small, 128kB, 150MHZ
+#### Host System
+*  Ubuntu 16.04
 
 #### Software Requirements
 --------------------------
@@ -46,12 +47,8 @@
 
 *  USB Mouse
 
-#### Host System
-----------
-
-*  Ubuntu 16.04
-
 #### Build an SD image by yourself
+----------
 
 * Prepare an SD or micro-SD card, more than 16GB is better.
 * Devide the SD card with 2 partitions.
