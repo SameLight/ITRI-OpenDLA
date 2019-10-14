@@ -1,14 +1,8 @@
-<table>
-<tr>
-<td colspan="2" align="center"><h1>Prebuilt DLA System on ZCU102 or ZCU104</h1>
-</td>
-</tr>
-</table>
+###Prebuilt DLA System on ZCU102 or ZCU104
 
 
 #### Prebuilt Applications
 ------------------
-
 
 *  Live camera objection detection (Tiny YOLO), classification (Resnet50)
 
@@ -17,10 +11,9 @@
 *  Conventional image classification
 
 
-#### DLA SPEC
-*  64-MAC NV_small, 128kB, 150MHZ
-#### Host System
-*  Ubuntu 16.04
+**DLA SPEC :** 64-MAC NV_small, 128kB, 150MHZ
+
+**Host System :** Ubuntu 16.04
 
 #### Software Requirements
 --------------------------
