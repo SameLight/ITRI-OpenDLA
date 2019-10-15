@@ -1,7 +1,7 @@
 ## FPGA\_RTL\_nvsmall64 
 ----------
 
-Revised RTL design of [NVDLA small version](http://nvdla.org/), which has 64 MAC cores, 128-KB convolution buffer. 
+Revised and flat RTL design of [NVDLA small version](http://nvdla.org/), which has 64 MAC cores, 128-KB convolution buffer. 
 
 ### Modified RTL codes compared to the original NVDLA nv\_small\_64
 
