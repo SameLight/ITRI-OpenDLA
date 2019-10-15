@@ -72,9 +72,11 @@
 
   *  We will send you the link or the image file link (google drive or ITRI file delivery).
 
-  *  Also, you may visit us and directly bring back the image file.
+  *  Also, if you are local, welcome to visit us for more information.
 
-#### Documents
+
+### Documents
+----------
 
 *  [Petalinux Building Tutorial](./doc/Petalinux%20Tutorial/petalinux_tutorial.pdf)
 
