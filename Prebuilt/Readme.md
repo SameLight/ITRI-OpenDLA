@@ -1,30 +1,29 @@
 ## Prebuilt DLA System on ZCU102 or ZCU104
 ![](doc/img/demo_index.png)
 
-
-### Prebuilt Applications
 ------------------
 
-*  Live camera objection detection (Tiny YOLO), classification (Resnet50)
+### Prebuilt Applications
 
-*  Interactive video classification, click mouse to identify
+1.  Live camera objection detection (Tiny YOLO), classification (Resnet50)
 
-*  Conventional image classification
+2.  Interactive video classification, click mouse to identify
+
+3.  Conventional image classification
 
 
-**DLA SPEC :** 64-MAC NV_small, 128kB, 150MHZ
+* **DLA SPEC :** 64-MAC NV_small, 128kB, 150MHZ
 
-**Host System :** Ubuntu 16.04
+* **Host System :** Ubuntu 16.04
 
-### Software Requirements
 --------------------------
+### Software Requirements
 
 *  Vivado&reg; Design Suite 2018.3
 
 *  PetaLinux Tools 2018.3
 
 ### Hardware Requirements
---------------------------
 
 *  ZCU102 Evaluation Board or ZCU104 Evaluation Board
 
@@ -38,8 +37,8 @@
 
 *  USB Mouse
 
+--------------------------
 ### Build an SD image by yourself
-----------
 
 * Prepare an SD or micro-SD card, more than 16GB is better.
 * Divide the SD card with 2 partitions.
@@ -50,9 +49,8 @@
        % cd your_path/resnet_tiny-yolov1
        % ./rvm –platform linuxfb
  
-
+--------------------------
 ### Directly Apply for the prebuilt SD image, to plug and play
--------------------------------------------
 
 *  Apply for the prebuilt DLA system with the demos of classification and object detection.
 
@@ -76,9 +74,9 @@
 
   *  Also, if you are local, welcome to visit us for more information.
 
+----------
 
 ### Documents
-----------
 
 *  [Petalinux Building Tutorial](./doc/Petalinux%20Tutorial/petalinux_tutorial.pdf)
 
