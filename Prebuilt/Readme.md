@@ -1,5 +1,5 @@
 ## Prebuilt DLA System on ZCU102 or ZCU104
-![](/doc/img/demo_index.png)
+![](doc/img/demo_index.png)
 
 
 ### Prebuilt Applications
@@ -44,7 +44,7 @@
 * Prepare an SD or micro-SD card, more than 16GB is better.
 * Divide the SD card with 2 partitions.
 * The 1st partition is the u-boot and boot loader codes (BOOT.BIN & image.ub).
-* The 2nd partition is the media parts including the current directories.
+* The 2nd partition (ext4) is the media parts including the current directories.
 * After boot-up the system, change to the Prebuilt/resnet_tiny-yolov1 folder, use rvm command to execute.
 
        % cd your_path/resnet_tiny-yolov1
