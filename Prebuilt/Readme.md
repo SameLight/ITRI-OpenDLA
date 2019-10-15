@@ -22,7 +22,7 @@
 
 *  PetaLinux Tools 2018.3
 
-### Hardward Requirements
+### Hardware Requirements
 --------------------------
 
 *  ZCU102 Evaluation Board or ZCU104 Evaluation Board
@@ -41,22 +41,22 @@
 ----------
 
 * Prepare an SD or micro-SD card, more than 16GB is better.
-* Devide the SD card with 2 partitions.
-* The 1st partition is the u-boot and boot loader codes.
-* The 2nd pattition is the media parts including the current directories.
+* Divide the SD card with 2 partitions.
+* The 1st partition is the u-boot and boot loader codes (BOOT.BIN & image.ub).
+* The 2nd partition is the media parts including the current directories.
 * After boot-up the system, change to the Prebuilt/resnet_tiny-yolov1 folder, use following command to execute.
 
        % ./rvm –platform linuxfb
  
 
-### Directly Apply for an SD image (plug and play)
+### Directly Apply for the prebuilt SD image, to plug and play
 -------------------------------------------
 
 *  Apply for the prebuilt DLA system with the demos of classification and object detection.
 
     * The compressed image file is about 5GB.
 
-    * Please fill the apply through the google form https://forms.gle/TA7fu4JENSjQqwB26.
+    * Please fill the form through the google form https://forms.gle/TA7fu4JENSjQqwB26.
 
     * Or, you may send your request to scluo@itri.org.tw, with following info.
 
