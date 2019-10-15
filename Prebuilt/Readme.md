@@ -57,9 +57,9 @@
       *  Email titled: 【Try DLA】YourID 
       *  Email contents: 
       
-              Your ID  (Name or Job Function)
+              Repeat your ID  (Title, Name)
               Affiliation (Company or School) 
-              FPGA platform : ZCU102 or ZCU104 
+              Required FPGA platform : ZCU102 or ZCU104 
               Brief introduction of your project
 
   *  We will send you the link through google drive or ITRI file delivery system.
