@@ -1,4 +1,4 @@
-## nvsmall64_zcu104 
+# nvsmall64\_zcu104 
 ----------
 
 64-MAC DLA implementation on the Xilinx ZCU104 Board. 
@@ -12,44 +12,44 @@ DEV References:
 
 
 ------------
+## Contents
+- conv\_8x8\_3x3\_fc\_ic32\_oc32: test program of a convolution operation
+- dla_copy: test program of a data movement
+- doc: documentation
+- e38: the vivado project 
 
-### Hardware Setup
+-------------
+## Hardware Requirements
 
 - ZCU104 evaluation board
-
 - Display Port cable (DP certified) 
-
 - Micro-USB cable (UART terminal)
-
 - USB3 micro-B adapter + HUB
-
 - USB mouse
-
 - SD card
-
 - USB webcam (optional)
 
 
-### Software Setup
+## Software Requirements
 
 Reference: [Xilinx UG1144](https://www.xilinx.com/support/documentation/sw_manuals/xilinx2018_3/ug1144-petalinux-tools-reference-guide.pdf)
 
 - Linux host machine for all tool flow tutorials
 - PetaLinux Tools version 2018.3
 - Silicon Labs quad CP210x USB-to-UART bridge driver
-- Serial terminal emulator
+- Terminal for serial UART control
 
 
 ---------------------
 
-### To Build
+## To Build
 
-**Environment Setup**
+### Environment Setup
 
 1. Clone the repository **FPGA_RTL_nvsmall64** to your directory
 1. Open Vivado Project --> Settings --> IP --> Repository --> Add above **FPGA_RTL_nvsmall64** path
 
-**Generate Bitstream**
+### Generate Bitstream
 
 1. Vivado : File --> Launch SDK
 1. Vivado : File --> Export Hardware (include bitstream)
@@ -57,7 +57,7 @@ Reference: [Xilinx UG1144](https://www.xilinx.com/support/documentation/sw_manua
 1. Setup the FPGA switches to : SD Boot Mode
 
 
-**Run the test bench: dla_copy** 
+###  Run the test bench: dla_copy  
 
 Test Program Description:  the program transfers data(Image_q_dog_HW.bin ) from 0x40000000(Source) to 0x40200000(Destination), and then compare the data of 0x50000000 (Golden) with the data of 0x40200000(Destination).
 
@@ -71,7 +71,7 @@ Test Program Description:  the program transfers data(Image_q_dog_HW.bin ) from 
 
 
 
-**Run the test bench: conv_8x8_3x3_fc_ic32_oc32**
+### Run the test bench: conv\_8x8_3x3\_fc\_ic32\_oc32
 
 Test Program Description: the program executes a convolution operation and generate OFM : 6x6x32 at 0x40080000, and then compare the data of 0x40080000(OFM) with the data of 0x50000000 (Golden OFM).
 
@@ -79,7 +79,7 @@ Test Program Description: the program executes a convolution operation and gener
 1. SDK :Xilinx --> Restore Memory --> CONV_SDP_0_input.bin to Start Address : 0x40000000 (IFM)
 1. SDK :Xilinx --> Restore Memory --> CONV_SDP_0_weight.bin to Start Address : 0x40040000 (Weight)
 1. SDK :Xilinx --> Restore Memory --> CONV_SDP_0_output_golden.bin to Start Address : 0x50000000 (Golden OFM)
-1. Running the **conv_8x8_3x3_fc_ic32_oc32** test program
+1. Running the **conv\_8x8\_3x3\_fc\_ic32\_oc32** test program
 1. Compare and check 0x40080000(OFM) and 0x50000000(Golden OFM)
 1. If success, a “Convolution Test Success” message will show in the terminal
 

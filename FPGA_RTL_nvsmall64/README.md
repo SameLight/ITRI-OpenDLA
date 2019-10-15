@@ -1,31 +1,17 @@
-# FPGA_RTL_nvsmall64 
+## FPGA\_RTL\_nvsmall64 
 ----------
 
-A NVDLA nvsmall_64 AI Edge Accelerator on Xilinx ZCU102 / ZCU104 Board. This is a Xilinx
-Vivado IP Package for NVDLA nvsmall64.
+Revised RTL design of [NVDLA small version](http://nvdla.org/), which has 64 MAC cores, 128-KB convolution buffer. 
 
-### NVDLA accelerator related information is as follows. 
+### Modified RTL codes compared to the original NVDLA nv\_small\_64
 
-http://nvdla.org/
-
-
-### Modified RTL codes from the original NVDLA nvsmall64
-----------
-1. for uint8 data format :
-
-    NV_NVDLA_cmac.v
-    
-    NV_NVDLA_CMAC_core.v
-    
-    NV_NVDLA_CMAC_CORE_mac.v
-    
-2. for APB Interface :
-
-    NV_NVDLA_apb2csb.v
-    
-3. for DBB Interface :
-
-    NV_nvdla_apb.v
+1. Modified for support uint8 data format :
+   +  NV\_NVDLA\_cmac.v
+   +  NV\_NVDLA\_CMAC_core.v    
+   +  NV\_NVDLA\_CMAC_CORE_mac.v
+2. Modified for support FPGA BUS Interface :
+   +  NV\_NVDLA\_apb2csb.v
+   +  NV\_nvdla\_apb.v
 
 
 
