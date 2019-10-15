@@ -1,4 +1,5 @@
 ## Prebuilt DLA System on ZCU102 or ZCU104
+![](/doc/img/demo_index.png)
 
 
 ### Prebuilt Applications
