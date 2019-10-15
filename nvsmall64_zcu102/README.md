@@ -1,7 +1,7 @@
 # nvsmall64\_zcu102 
 ----------
 
-64-MAC DLA implementation on the Xilinx ZCU104 Board. 
+64-MAC DLA implementation on the Xilinx ZCU102 Board. 
 
 The project is based on Zynq UltraScale MPSoC Base TRD 2017.4
 
