@@ -20,31 +20,25 @@
 ### Software Requirements
 
 *  Vivado&reg; Design Suite 2018.3
-
 *  PetaLinux Tools 2018.3
 
 ### Hardware Requirements
 
 *  ZCU102 Evaluation Board or ZCU104 Evaluation Board
-
-*  Display Port
-
-*  12V Power Supply
-
-*  USB Adapter (ZCU102 Requirement)
-
-*  USB 3.0 Hub
-
-*  USB Mouse
+*  An Full-HD monitor (1920x1080) with displayport(DP) 
+*  A DP cable (if you'd like to use VGA or HDMI converter, be aware of the compatibility)
+*  USB Adapter and USB Hub
+*  USB Mouse and USB Webcam
+*  A desktop/laptop + USB cable for UART control (optional)
 
 --------------------------
 ### Build an SD image by yourself
 
-* Prepare an SD or micro-SD card, more than 16GB is better.
+* Prepare an SD or micro-SD card, >= 16GB is preferred.
 * Divide the SD card with 2 partitions.
-* The 1st partition is the u-boot and boot loader codes (BOOT.BIN & image.ub).
-* The 2nd partition (ext4) is the media parts including the current directories.
-* After boot-up the system, change to the Prebuilt/resnet_tiny-yolov1 folder, use rvm command to execute.
+* The 1st partition is the FPGA design and system bootloader (BOOT.BIN & image.ub).
+* The 2nd partition (ext4 format) is the media parts that in the current directory.
+* After the system being booted, change to the Prebuilt/resnet_tiny-yolov1 folder, use rvm command to execute QT GUI.
 
        % cd your_path/resnet_tiny-yolov1
        % ./rvm –platform linuxfb
@@ -52,25 +46,23 @@
 --------------------------
 ### Directly Apply for the prebuilt SD image, to plug and play
 
-*  Apply for the prebuilt DLA system with the demos of classification and object detection.
+* Once you find problem to build the system, you may apply for the prebuilt SD card image for quick demos.
 
-    * The compressed image file is about 5GB.
+    * The SD card image file is about 5GB after compressed.
 
-    * Please fill the form through the google form https://forms.gle/TA7fu4JENSjQqwB26.
+    * Please fill the google form [here](https://forms.gle/TA7fu4JENSjQqwB26).
 
     * Or, you may send your request to scluo@itri.org.tw, with following info.
 
       *  Email titled: 【Try DLA】YourID 
+      *  Email contents: 
+      
+              Your ID  (Name or Job Function)
+              Affiliation (Company or School) 
+              FPGA platform : ZCU102 or ZCU104 
+              Brief introduction of your project
 
-      *  Your ID  (Name or Job Function)
-
-      *  Affiliation (Company or School) 
-
-      *  FPGA platform : ZCU102 or ZCU104 
-
-      *  Brief introduction of your project
-
-  *  We will send you the link or the image file link (google drive or ITRI file delivery).
+  *  We will send you the link through google drive or ITRI file delivery system.
 
   *  Also, if you are local, welcome to visit us for more information.
 
