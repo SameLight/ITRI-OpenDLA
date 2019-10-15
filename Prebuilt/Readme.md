@@ -46,13 +46,13 @@
 
 * Once you find problem to build the system, you may apply for the prebuilt SD card image for quick demos.
 
-    * The SD card image file is about 5GB after compressed.
+    * The system image is about 5GB after compression.
 
     * Please fill the google form [here](https://forms.gle/TA7fu4JENSjQqwB26).
 
     * Or, you may send your request to scluo@itri.org.tw, with following info.
 
-      *  Email titled: 【Try DLA】YourID 
+      *  Email title: 【Try DLA】YourID 
       *  Email contents: 
       
               Repeat your ID  (Title, Name)
