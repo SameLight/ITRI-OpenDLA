@@ -1,101 +1,85 @@
-nvsmall64_zcu104 
+## nvsmall64_zcu104 
 ----------
 
-A NVDLA nvsmall_64 AI Edge Accelerator on Xilinx ZCU104 Board. This is a Xilinx
-Vivado project utilizing NVDLA nvsmall_64 and Xilinx related peripherals.
+64-MAC DLA implementation on the Xilinx ZCU104 Board. 
 
-The project is based on Xilinx ZCU104 V2 BSP, the website is as follows.
+This project is based on Xilinx ZCU104 V2 BSP.
 
+DEV References: 
 
-https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/embedded-design-tools/2018-3.html
-
-
-https://www.xilinx.com/member/forms/download/xef.html?filename=xilinx-zcu104-v2018.3-final-v2.bsp
++ https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/embedded-design-tools/2018-3.html
++ https://www.xilinx.com/member/forms/download/xef.html?filename=xilinx-zcu104-v2018.3-final-v2.bsp
 
 
+------------
+
+### Hardware Setup
+
+- ZCU104 evaluation board
+
+- Display Port cable (DP certified) 
+
+- Micro-USB cable (UART terminal)
+
+- USB3 micro-B adapter + HUB
+
+- USB mouse
+
+- SD card
+
+- USB webcam (optional)
 
 
-Hardware Required:
+### Software Setup
 
-•ZCU104 evaluation board
+Reference: [Xilinx UG1144](https://www.xilinx.com/support/documentation/sw_manuals/xilinx2018_3/ug1144-petalinux-tools-reference-guide.pdf)
 
-•Display Port cable (DP certified) 
-
-•Micro-USB cable, connected to laptop or desktop for the terminal emulator
-
-•Xilinx USB3 micro-B adapter
-
-•USB mouse
-
-•SD card
-
-Optional:
-
-•USB webcam
+- Linux host machine for all tool flow tutorials
+- PetaLinux Tools version 2018.3
+- Silicon Labs quad CP210x USB-to-UART bridge driver
+- Serial terminal emulator
 
 
-
-
-Software Required:
-
-•Linux host machine for all tool flow tutorials (see UG1144 for detailed OS requirements)
-
-•PetaLinux Tools version 2018.3 (see UG1144 for installation instructions)
-
-•Silicon Labs quad CP210x USB-to-UART bridge driver
-
-•Serial terminal emulator e.g. teraterm
-
-•Reference Design Zip File
-
-
-
-
-NVDLA FPGA System Architecture :
-
-See doc/nvsmall64 FPGA
-
-
-
-
-
-
-Building
 ---------------------
-You need:(See doc/nvsmall64 FPGA)
-        + Xilinx Vivado 2018.3
-        + Clone repository : FPGA_RTL_nvsmall64
-        + Open Vivado Project --> Settings --> IP --> Repository --> Add FPGA_RTL_nvsmall64 Path
-        + Generate Bitstream
-        + Vivado : File --> Launch SDK
-        + Vivado : File --> Export Hardware (include bitstream)
-        + Copy e38\project_1.sdk\SD_BOOT\bootimage\BOOT.bin to Micro SD
-        + FPGA Boot Mode : SD Mode
-        + dla copy : 
-          nvsmall64 transfer data(Image_q_dog_HW.bin ) from 0x40000000(Source) to 0x40200000(Destination)
-          And compare with 0x50000000 (Golden) and 0x40200000(Destination)
-          Using JTAG cable download bin file to DRAM 
-          SDK :Xilinx --> Restore Memory --> Image_q_dog_HW.bin to Start Address : 0x40000000 (Source)
-          SDK :Xilinx --> Restore Memory --> Image_q_dog_HW.bin to Start Address : 0x50000000 (Golden)
-          Running Test Program
-          nvsmall64 transfer Image_q_dog_HW.bin from 0x40000000 to 0x40200000
-          program compare check 0x40200000(Destination) and 0x50000000(Golden)
-          see “DLA Copy Test Success” message in Terminal 
-        + conv_8x8_3x3_fc_ic32_oc32 :     
-          nvsmall64 execute convolution operation and generate OFM : 6x6x32 at 0x40080000
-          And compare with 0x40080000(OFM) and 0x50000000 (Golden OFM)
-          IFM : 8x8x32 at 0x40000000
-          Weight : 3x3x32 at 0x40040000
-          OFM : 6x6x32 at 0x40080000
-          Golden OFM : 6x6x32 at 0x50000000
-          Using JTAG cable download bin file to DRAM
-          SDK :Xilinx --> Restore Memory --> CONV_SDP_0_input.bin to Start Address : 0x40000000 (IFM)
-          SDK :Xilinx --> Restore Memory --> CONV_SDP_0_weight.bin to Start Address : 0x40040000 (Weight)
-          SDK :Xilinx --> Restore Memory --> CONV_SDP_0_output_golden.bin to Start Address : 0x50000000 (Golden OFM)
-          Running Test Program
-          nvsmall64 generate OFM to 0x40080000
-          program compare check 0x40080000(OFM) and 0x50000000(Golden OFM)
-          see “Convolution Test Success” message in Terminal
+
+### To Build
+
+**Environment Setup**
+
+1. Clone the repository **FPGA_RTL_nvsmall64** to your directory
+1. Open Vivado Project --> Settings --> IP --> Repository --> Add above **FPGA_RTL_nvsmall64** path
+
+**Generate Bitstream**
+
+1. Vivado : File --> Launch SDK
+1. Vivado : File --> Export Hardware (include bitstream)
+1. Copy **e38\project_1.sdk\SD_BOOT\bootimage\BOOT.bin** to a Micro SD card
+1. Setup the FPGA switches to : SD Boot Mode
 
 
+**Run the test bench: dla_copy** 
+
+Test Program Description:  the program transfers data(Image_q_dog_HW.bin ) from 0x40000000(Source) to 0x40200000(Destination), and then compare the data of 0x50000000 (Golden) with the data of 0x40200000(Destination).
+
+1. Use a JTAG cable to download bin file to DRAM 
+1. SDK :Xilinx --> Restore Memory --> Image_q_dog_HW.bin to Start Address : 0x40000000 (Source)
+1. SDK :Xilinx --> Restore Memory --> Image_q_dog_HW.bin to Start Address : 0x50000000 (Golden) 
+1. Run the **dla_copy** test program
+1. Compare and check 0x40200000(Destination) and 0x50000000(Golden)
+1. If success, a “DLA Copy Test Success” message will show in the terminal 
+  
+
+
+
+**Run the test bench: conv_8x8_3x3_fc_ic32_oc32**
+
+Test Program Description: the program executes a convolution operation and generate OFM : 6x6x32 at 0x40080000, and then compare the data of 0x40080000(OFM) with the data of 0x50000000 (Golden OFM).
+
+1. Use a JTAG cable to download bin file to DRAM
+1. SDK :Xilinx --> Restore Memory --> CONV_SDP_0_input.bin to Start Address : 0x40000000 (IFM)
+1. SDK :Xilinx --> Restore Memory --> CONV_SDP_0_weight.bin to Start Address : 0x40040000 (Weight)
+1. SDK :Xilinx --> Restore Memory --> CONV_SDP_0_output_golden.bin to Start Address : 0x50000000 (Golden OFM)
+1. Running the **conv_8x8_3x3_fc_ic32_oc32** test program
+1. Compare and check 0x40080000(OFM) and 0x50000000(Golden OFM)
+1. If success, a “Convolution Test Success” message will show in the terminal
 
