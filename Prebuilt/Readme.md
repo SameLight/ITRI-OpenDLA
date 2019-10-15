@@ -14,8 +14,6 @@
 
 * **DLA SPEC :** 64-MAC NV_small, 128kB, 150MHZ
 
-* **Host System :** Ubuntu 16.04
-
 --------------------------
 ### Software Requirements
 
