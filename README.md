@@ -18,7 +18,7 @@ To have rich information, please visit our public [site](https://sites.google.co
 - **ICL** (Information and Communication Laboratories), one of the major Lab in ITRI, wherein research covers information, networking, cloud, fintech, communication, and IC technologies.
 
 ### About DLA
-- **DLA** (Deep Learning Accelerator), is the flexible DNN processing engine opened by NVDIA, and now has been revised with several features, including the support of MobileNet Series, weight decompression of convolution / fully-connected operations, and various customize options for users.
+- **DLA** (Deep Learning Accelerator), is the flexible DNN processing engine opened by NVDIA, and now has been revised with several features, including the support of MobileNet Series (under commercial license, not inside this open source), weight decompression of convolution / fully-connected operations, and various customize options for users.
 
 ### Our Purpose
 The OpenDLA here is a basic one, 64-MAC version, which is originally named nv_small in NVDIA's open source. Here we provide the synthesizable codes and project files for popular Xilinx MPSOC FPGA Series. We hope this may contribute an easy entrance for DNN edge implementation whether in academic or industrial. Also, this can be a fast way to evaluate our services. 
