@@ -26,7 +26,7 @@ DEV References:
 - Micro-USB cable (UART terminal)
 - USB3 micro-B adapter + HUB
 - USB mouse
-- SD card
+- Micro SD card
 - USB webcam (optional)
 
 
@@ -53,7 +53,7 @@ Reference: [Xilinx UG1144](https://www.xilinx.com/support/documentation/sw_manua
 
 1. Vivado : File --> Launch SDK
 1. Vivado : File --> Export Hardware (include bitstream)
-1. Copy **e38\project_1.sdk\SD_BOOT\bootimage\BOOT.bin** to a Micro SD card
+1. Copy **e38\project_1.sdk\SD_BOOT\bootimage\BOOT.bin** to a micro SD card
 1. Setup the FPGA switches to : SD Boot Mode
 
 
