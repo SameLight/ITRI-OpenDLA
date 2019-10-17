@@ -16,7 +16,8 @@ DEV References:
 - conv\_8x8\_3x3\_fc\_ic32\_oc32: test program of a convolution operation
 - dla_copy: test program of a data movement
 - doc: documentation
-- e38: the vivado project 
+- e38\project_1.sdk\design_1_wrapper_hw_platform_0\design_1_wrapper.bit: the vivado project bitstream
+- e38\project_1.sdk\SD_BOOT\bootimage\BOOT.bin: SD Card Boot.bin
 
 -------------
 ## Hardware Requirements
@@ -47,12 +48,13 @@ Reference: [Xilinx UG1144](https://www.xilinx.com/support/documentation/sw_manua
 ### Environment Setup
 
 1. Clone the repository **FPGA_RTL_nvsmall64** to your directory
+1. Create Vivado Project or using Xilinx ZCU104 V2 BSP
 1. Open Vivado Project --> Settings --> IP --> Repository --> Add above **FPGA_RTL_nvsmall64** path
 
-### Generate Bitstream
+### Running Bitstream using SD Card
 
-1. Vivado : File --> Launch SDK
-1. Vivado : File --> Export Hardware (include bitstream)
+1. open Xilinx SDK 2018.3 Tool
+1. Workspace assign a38\project_1.sdk
 1. Copy **e38\project_1.sdk\SD_BOOT\bootimage\BOOT.bin** to a micro SD card
 1. Setup the FPGA switches to : SD Boot Mode
 
