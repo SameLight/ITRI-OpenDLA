@@ -34,7 +34,7 @@
 
 * Prepare an SD or micro-SD card, >= 16GB is preferred.
 * Divide the SD card with 2 partitions.
-* The 1st partition is the FPGA design and system bootloader (BOOT.BIN & image.ub).
+* The 1st partition is the FPGA design and system boot image (BOOT.BIN & image.ub).
 * The 2nd partition (ext4 format) is the media parts that in the current directory.
 * After the system being booted, change to the Prebuilt/resnet_tiny-yolov1 folder, use rvm command to execute QT GUI.
 
