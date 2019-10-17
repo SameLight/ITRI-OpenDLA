@@ -13,11 +13,11 @@ DEV References:
 
 ------------
 ## Contents
-- conv\_8x8\_3x3\_fc\_ic32\_oc32: test program of a convolution operation
-- dla_copy: test program of a data movement
-- doc: documentation
-- e38\project_1.sdk\design_1_wrapper_hw_platform_0\design_1_wrapper.bit: the vivado project bitstream
-- e38\project_1.sdk\SD_BOOT\bootimage\BOOT.bin: SD Card Boot.bin
+- **conv\_8x8\_3x3\_fc\_ic32\_oc32:** test program of a convolution operation
+- **dla_copy:** test program of a data movement
+- **doc:** documentation
+- e38\project_1.sdk\design_1_wrapper_hw_platform_0\\**design_1_wrapper.bit:** the vivado project bitstream
+- e38\project_1.sdk\SD_BOOT\bootimage\\**BOOT.bin:** SD Card Boot.bin
 
 -------------
 ## Hardware Requirements
