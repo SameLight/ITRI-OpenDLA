@@ -51,8 +51,8 @@ Reference: [Xilinx UG1144](https://www.xilinx.com/support/documentation/sw_manua
 
 ### Generate Bitstream
 
-1. Vivado : File --> Launch SDK
-1. Vivado : File --> Export Hardware (include bitstream)
+1. Open Xilinx SDK 2018.3 Tool
+1. Workspace assign a38\project_1.sdk
 1. Copy **a38\project_1.sdk\SD_BOOT\bootimage\BOOT.bin** to a Micro SD card
 1. Setup the FPGA switches to : SD Boot Mode
 
