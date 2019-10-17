@@ -49,7 +49,7 @@ Reference: [Xilinx UG1144](https://www.xilinx.com/support/documentation/sw_manua
 1. Create Vivado Project or using TRD 2017.4
 1. Open Vivado Project --> Settings --> IP --> Repository --> Add above **FPGA_RTL_nvsmall64** path
 
-### Generate Bitstream
+### Running Bitstream using SD Card
 
 1. Open Xilinx SDK 2018.3 Tool
 1. Workspace assign a38\project_1.sdk
