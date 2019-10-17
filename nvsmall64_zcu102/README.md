@@ -14,7 +14,7 @@ DEV References:
 - conv\_8x8\_3x3\_fc\_ic32\_oc32: test program of a convolution operation
 - dla_copy: test program of a data movement
 - doc: documentation
-- a38: the vivado project 
+- a38\project_1.sdk\zcu102_base_trd_wrapper_hw_platform_0\zcu102_base_trd_wrapper.bin\: the vivado project bitstream 
 
 ---------------------
 
